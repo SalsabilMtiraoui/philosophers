@@ -9,7 +9,6 @@ This repository contains the list of philosophers extracted from Wikipedia and p
 
 ## 📊 Objectives
 - Extract names, dates, and fields of philosophers.
-- Still not sure tbh
 
 ## 🗒️ License
 This project is licensed under the CC-BY-SA-4.0 License.

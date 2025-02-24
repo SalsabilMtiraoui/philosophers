@@ -1,14 +1,21 @@
-# philosophers
-List and analysis of philosophers
+# Philosophes
+Liste et analyse des philosophes.
 
 ## 📋 Description
-This repository contains the list of philosophers extracted from Wikipedia and provides a structured dataset for analysis.
+Ce dépôt contient la liste des philosophes extraite de Wikipedia et fournit un ensemble de données structuré pour l'analyse.
 
 ## 📌 Source
-[List of Philosophers on Wikipedia](https://en.wikipedia.org/wiki/List_of_philosophers_(A%E2%80%93C))
+[Liste des philosophes sur Wikipedia](https://en.wikipedia.org/wiki/List_of_philosophers_(A%E2%80%93C))
 
-## 📊 Objectives
+## ❗ Problématique 
+- Trouver les domaines dominants chez les philosophes selon leur origine
+- Les différences entre philosophes femmes et hommes
+- Est-ce que les philosophes meurent plus taux que l'espérance de vie de leur époque ?
+- Période avec le plus de philosophes reconnues (aka le besoin des gens des philosopes surtout moments crises)
+- Marginilisation et enganement politique en même temps versus engagement scientifique
+
+## 📊 Objectifs
 - Extract names, dates, and fields of philosophers.
 
 ## 🗒️ License
-This project is licensed under the CC-BY-SA-4.0 License.
+Ce projet est sous la licence CC-BY-SA-4.0.

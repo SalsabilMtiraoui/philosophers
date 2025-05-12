@@ -1,4 +1,4 @@
-# Modélisation du champ philosophique à partir de Wikidata (Philosophes A–C)
+# Modélisation du champ philosophique à partir de Wikidata 
 Liste et analyse des philosophes.
 
 ## 📋 Description

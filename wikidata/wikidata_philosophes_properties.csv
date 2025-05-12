@@ -1,0 +1,14 @@
+p,propLabel,effectif,remarques
+wdt:P106,occupation,5982,Philosopher (Q4964182)
+wdt:P569,date of birth,5867,Permet de filtrer après 1700
+wdt:P21,sex or gender,5781,Analyse genre
+wdt:P27,country of citizenship,5623,Analyse géographique
+wdt:P19,place of birth,5492,Lien avec région
+wdt:P101,field of work,5340,"Philosophie, politique..."
+wdt:P69,educated at,5115,Universités
+wdt:P108,employer,4792,Institutions académiques
+wdt:P135,movement,2431,Écoles philosophiques
+wdt:P102,member of political party,183,Philosophie politique
+wdt:P802,student,908,Relation maître-élève
+wdt:P1066,student of,1032,Filiation intellectuelle
+wdt:P463,member of,2893,"Académies, institutions"

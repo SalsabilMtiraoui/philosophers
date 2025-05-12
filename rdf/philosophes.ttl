@@ -1,0 +1,2517 @@
+@prefix ex: <http://example.org/philosophes/> .
+@prefix schema1: <http://schema.org/> .
+
+ex:Adam_Müller a schema1:Person ;
+    schema1:birthDate "1779-06-30T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Adam Müller" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Adam_Smith a schema1:Person ;
+    schema1:birthDate "1723-06-01T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Adam Smith" ;
+    schema1:nationality "royaume de Grande-Bretagne" .
+
+ex:Adolf_Reinach a schema1:Person ;
+    schema1:birthDate "1883-12-23T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Adolf Reinach" ;
+    schema1:nationality "grand-duché de Hesse" .
+
+ex:Albert_Camus a schema1:Person ;
+    schema1:birthDate "1913-11-07T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "philosophie continentale" ;
+    schema1:name "Albert Camus" ;
+    schema1:nationality "France" .
+
+ex:Albert_Schwegler a schema1:Person ;
+    schema1:birthDate "1819-02-10T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Albert Schwegler" ;
+    schema1:nationality "Royaume du Wurtemberg" .
+
+ex:Albert_Schweitzer a schema1:Person ;
+    schema1:birthDate "1875-01-14T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Albert Schweitzer" ;
+    schema1:nationality "France",
+        "Reich allemand" .
+
+ex:Albrecht_Ritschl a schema1:Person ;
+    schema1:birthDate "1822-03-25T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Albrecht Ritschl" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Alexander_Mitscherlich a schema1:Person ;
+    schema1:birthDate "1908-09-20T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Alexander Mitscherlich" ;
+    schema1:nationality "Allemagne" .
+
+ex:Alfred_Bäumler a schema1:Person ;
+    schema1:birthDate "1887-11-19T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Alfred Bäumler" ;
+    schema1:nationality "Allemagne" .
+
+ex:Alfred_Kolleritsch a schema1:Person ;
+    schema1:birthDate "1931-02-16T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Alfred Kolleritsch" ;
+    schema1:nationality "Autriche" .
+
+ex:Alfred_Marshall a schema1:Person ;
+    schema1:birthDate "1842-07-26T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Arthur Cecil Pigou",
+        "John Maynard Keynes and Friedrich Hayek" ;
+    schema1:name "Alfred Marshall" ;
+    schema1:nationality "Royaume-Uni de Grande-Bretagne et d'Irlande" .
+
+ex:Anatoli_Lounatcharski a schema1:Person ;
+    schema1:birthDate "1875-11-23T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Anatoli Lounatcharski" ;
+    schema1:nationality "Empire russe",
+        "Russie soviétique",
+        "Union soviétique" .
+
+ex:André-Marie_Ampère a schema1:Person ;
+    schema1:birthDate "1775-01-20T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Jean-Baptiste-Firmin Demonferrand" ;
+    schema1:name "André-Marie Ampère" ;
+    schema1:nationality "France" .
+
+ex:André_Léonard a schema1:Person ;
+    schema1:birthDate "1940-05-06T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "André Léonard" ;
+    schema1:nationality "Belgique" .
+
+ex:Antoine_de_Saint-Exupéry a schema1:Person ;
+    schema1:birthDate "1900-06-29T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Antoine de Saint-Exupéry" ;
+    schema1:nationality "France" .
+
+ex:Anton_Stres a schema1:Person ;
+    schema1:birthDate "1942-12-15T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Anton Stres" ;
+    schema1:nationality "Slovénie" .
+
+ex:Anton_Szandor_LaVey a schema1:Person ;
+    schema1:birthDate "1930-04-11T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Anton Szandor LaVey" ;
+    schema1:nationality "États-Unis" .
+
+ex:Antonio_Patriota a schema1:Person ;
+    schema1:birthDate "1954-04-27T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Antonio Patriota" ;
+    schema1:nationality "Brésil" .
+
+ex:Arnold_Gehlen a schema1:Person ;
+    schema1:birthDate "1904-01-29T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "anthropologie philosophique" ;
+    schema1:name "Arnold Gehlen" ;
+    schema1:nationality "Allemagne" .
+
+ex:Arnold_Ruge a schema1:Person ;
+    schema1:birthDate "1802-09-13T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Arnold Ruge" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Arthur_Balfour a schema1:Person ;
+    schema1:birthDate "1848-07-25T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Arthur Balfour" ;
+    schema1:nationality "Royaume-Uni",
+        "Royaume-Uni de Grande-Bretagne et d'Irlande" .
+
+ex:Arthur_Drews a schema1:Person ;
+    schema1:birthDate "1865-11-01T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Arthur Drews" ;
+    schema1:nationality "Allemagne" .
+
+ex:Arthur_Kronfeld a schema1:Person ;
+    schema1:birthDate "1886-01-09T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Arthur Kronfeld" ;
+    schema1:nationality "Reich allemand",
+        "Union soviétique" .
+
+ex:Arthur_Schopenhauer a schema1:Person ;
+    schema1:birthDate "1788-02-22T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "irrationalisme" ;
+    schema1:name "Arthur Schopenhauer" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Auguste_Comte a schema1:Person ;
+    schema1:alumniOf "Alexis Thérèse Petit",
+        "Augustin Louis Cauchy",
+        "Claude-Henri de Rouvroy de Saint-Simon",
+        "Daniel Encontre",
+        "François Arago",
+        "Jean Nicolas Pierre Hachette",
+        "Louis Jacques Thénard",
+        "Louis Poinsot" ;
+    schema1:birthDate "1798-01-19T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Eugène Sémérie",
+        "Fabien Magnin",
+        "Pierre Laffitte",
+        "Richard Congreve" ;
+    schema1:knowsAbout "positivisme" ;
+    schema1:name "Auguste Comte" ;
+    schema1:nationality "France" .
+
+ex:Auguste_Forel a schema1:Person ;
+    schema1:alumniOf "Theodor Hermann Meynert" ;
+    schema1:birthDate "1848-09-01T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Auguste Forel" ;
+    schema1:nationality "Suisse" .
+
+ex:Auguste_Schlegel a schema1:Person ;
+    schema1:birthDate "1767-09-08T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Albert de Saxe-Cobourg-Gotha" ;
+    schema1:knowsAbout "Premier romantisme allemand",
+        "Romantisme allemand",
+        "romantisme" ;
+    schema1:name "Auguste Schlegel" ;
+    schema1:nationality "royaume de Hanovre" .
+
+ex:Bassam_Tibi a schema1:Person ;
+    schema1:birthDate "1944-04-04T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Bassam Tibi" ;
+    schema1:nationality "Allemagne",
+        "Syrie" .
+
+ex:Benoît_XVI a schema1:Person ;
+    schema1:birthDate "1927-04-16T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Bruno Schmid" ;
+    schema1:name "Benoît XVI" ;
+    schema1:nationality "Allemagne",
+        "Italie",
+        "Vatican" .
+
+ex:Bernhard_Rensch a schema1:Person ;
+    schema1:birthDate "1900-01-21T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Bernhard Rensch" ;
+    schema1:nationality "Allemagne" .
+
+ex:Bert_Hellinger a schema1:Person ;
+    schema1:birthDate "1925-12-16T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Bert Hellinger" ;
+    schema1:nationality "Allemagne" .
+
+ex:Bertrand_Russell a schema1:Person ;
+    schema1:alumniOf "George Frederick Stout" ;
+    schema1:birthDate "1872-05-18T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Philip Jourdain" ;
+    schema1:knowsAbout "libre-pensée",
+        "philosophie analytique",
+        "philosophie occidentale" ;
+    schema1:name "Bertrand Russell" ;
+    schema1:nationality "Royaume-Uni",
+        "Royaume-Uni de Grande-Bretagne et d'Irlande" .
+
+ex:Boris_Groys a schema1:Person ;
+    schema1:birthDate "1947-03-19T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Boris Groys" ;
+    schema1:nationality "Allemagne",
+        "Russie" .
+
+ex:Cai_Yuanpei a schema1:Person ;
+    schema1:birthDate "1868-01-11T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Cai Yuanpei" ;
+    schema1:nationality "dynastie Qing",
+        "république de Chine" .
+
+ex:Carl_August_von_Eschenmayer a schema1:Person ;
+    schema1:birthDate "1768-07-04T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Carl August von Eschenmayer" ;
+    schema1:nationality "duché de Wurtemberg" .
+
+ex:Carl_Dahlhaus a schema1:Person ;
+    schema1:birthDate "1928-06-10T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Carl Dahlhaus" ;
+    schema1:nationality "Allemagne" .
+
+ex:Carl_Friedrich_von_Weizsäcker a schema1:Person ;
+    schema1:birthDate "1912-06-28T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Carl Friedrich von Weizsäcker" ;
+    schema1:nationality "Allemagne",
+        "Royaume du Wurtemberg" .
+
+ex:Carl_Gustav_Carus a schema1:Person ;
+    schema1:birthDate "1789-01-03T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Carl Gustav Carus" ;
+    schema1:nationality "royaume de Saxe" .
+
+ex:Carl_Gustav_Hempel a schema1:Person ;
+    schema1:birthDate "1905-01-08T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Carl Gustav Hempel" ;
+    schema1:nationality "Allemagne",
+        "États-Unis" .
+
+ex:Carl_Göring a schema1:Person ;
+    schema1:birthDate "1841-04-28T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Carl Göring" ;
+    schema1:nationality "Allemagne",
+        "Confédération de l'Allemagne du Nord",
+        "Empire allemand" .
+
+ex:Carl_Heinrich_Becker a schema1:Person ;
+    schema1:birthDate "1876-04-12T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Carl Heinrich Becker" ;
+    schema1:nationality "Allemagne" .
+
+ex:Carl_Peter_Thunberg a schema1:Person ;
+    schema1:birthDate "1743-11-11T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Jonas Nicolaus Ahl",
+        "Katsuragawa Hoshū",
+        "Nakagawa Jun'an" ;
+    schema1:name "Carl Peter Thunberg" ;
+    schema1:nationality "Suède" .
+
+ex:Carl_Stumpf a schema1:Person ;
+    schema1:alumniOf "Franz Brentano",
+        "Rudolf Hermann Lotze" ;
+    schema1:birthDate "1848-04-21T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Edmund Husserl",
+        "Erich Rothacker",
+        "Hans Cornelius" ;
+    schema1:name "Carl Stumpf" ;
+    schema1:nationality "Allemagne" .
+
+ex:Charles_Babbage a schema1:Person ;
+    schema1:birthDate "1791-12-26T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Charles Babbage" ;
+    schema1:nationality "Royaume-Uni de Grande-Bretagne et d'Irlande" .
+
+ex:Charles_Darwin a schema1:Person ;
+    schema1:alumniOf "Adam Sedgwick",
+        "John Edmonstone" ;
+    schema1:birthDate "1809-02-12T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Charles Darwin" ;
+    schema1:nationality "Royaume-Uni de Grande-Bretagne et d'Irlande" .
+
+ex:Charles_Maurras a schema1:Person ;
+    schema1:alumniOf "Jean-Baptiste Penon" ;
+    schema1:birthDate "1868-04-20T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "néo-classicisme",
+        "positivisme",
+        "royalisme" ;
+    schema1:name "Charles Maurras" ;
+    schema1:nationality "France" .
+
+ex:Christian_August_Crusius a schema1:Person ;
+    schema1:birthDate "1715-01-10T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Christian August Crusius" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Constantin_Tsiolkovski a schema1:Person ;
+    schema1:birthDate "1857-09-17T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Constantin Tsiolkovski" ;
+    schema1:nationality "Empire russe",
+        "Russie soviétique",
+        "République russe",
+        "Union soviétique" .
+
+ex:Craig_Au_Yeung_Ying_Chai a schema1:Person ;
+    schema1:birthDate "1961-01-01T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Craig Au Yeung Ying Chai" ;
+    schema1:nationality "Hong Kong" .
+
+ex:Curtis_Anthony_Anderson a schema1:Person ;
+    schema1:birthDate "1940-05-29T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Curtis Anthony Anderson" ;
+    schema1:nationality "États-Unis" .
+
+ex:Dag_Hammarskjöld a schema1:Person ;
+    schema1:alumniOf "Hildur Akselsson" ;
+    schema1:birthDate "1905-07-29T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Dag Hammarskjöld" ;
+    schema1:nationality "Suède" .
+
+ex:Daisetz_Teitaro_Suzuki a schema1:Person ;
+    schema1:alumniOf "Shaku Soyen",
+        "Takeda Mokurai" ;
+    schema1:birthDate "1870-10-18T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Daisetz Teitaro Suzuki" ;
+    schema1:nationality "Japon" .
+
+ex:David_Hilbert a schema1:Person ;
+    schema1:birthDate "1862-01-23T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Erich Hecke",
+        "Otto Blumenthal",
+        "Richard Courant",
+        "Wilhelm Ackermann" ;
+    schema1:name "David Hilbert" ;
+    schema1:nationality "Empire allemand",
+        "Royaume de Prusse",
+        "République de Weimar",
+        "Troisième Reich" .
+
+ex:David_Hume a schema1:Person ;
+    schema1:birthDate "1711-05-07T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "empirisme",
+        "naturalisme",
+        "scepticisme (philosophie)",
+        "siècle des Lumières" ;
+    schema1:name "David Hume" ;
+    schema1:nationality "royaume de Grande-Bretagne" .
+
+ex:David_Strauss a schema1:Person ;
+    schema1:birthDate "1808-01-27T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "David Strauss" ;
+    schema1:nationality "Royaume du Wurtemberg",
+        "Suisse" .
+
+ex:Denis_Diderot a schema1:Person ;
+    schema1:birthDate "1713-10-05T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Paul Boësnier de l'Orme" ;
+    schema1:knowsAbout "Lumières",
+        "encyclopédiste",
+        "matérialisme" ;
+    schema1:name "Denis Diderot" ;
+    schema1:nationality "royaume de France" .
+
+ex:Dieter_Henrich a schema1:Person ;
+    schema1:birthDate "1927-01-05T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Dieter Henrich" ;
+    schema1:nationality "Allemagne" .
+
+ex:Dietrich_Tiedemann a schema1:Person ;
+    schema1:birthDate "1748-04-03T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Dietrich Tiedemann" ;
+    schema1:nationality "Allemagne" .
+
+ex:Dietrich_von_Hildebrand a schema1:Person ;
+    schema1:birthDate "1889-10-12T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Dietrich von Hildebrand" ;
+    schema1:nationality "Allemagne" .
+
+ex:Eckhart_Tolle a schema1:Person ;
+    schema1:birthDate "1948-02-16T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Eckhart Tolle" ;
+    schema1:nationality "Allemagne",
+        "Canada" .
+
+ex:Edgar_Bauer a schema1:Person ;
+    schema1:birthDate "1820-10-07T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Edgar Bauer" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Edmund_Husserl a schema1:Person ;
+    schema1:alumniOf "Carl Stumpf",
+        "Franz Brentano",
+        "Friedrich Paulsen",
+        "Karl Weierstrass",
+        "Leopold Kronecker",
+        "Wilhelm Wundt" ;
+    schema1:birthDate "1859-04-08T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Carlos Astrada",
+        "Edith Stein",
+        "Eugen Fink",
+        "Günther Anders",
+        "Martin Heidegger" ;
+    schema1:knowsAbout "philosophie occidentale" ;
+    schema1:name "Edmund Husserl" ;
+    schema1:nationality "Reich allemand",
+        "empire d'Autriche" .
+
+ex:Eduard_Gans a schema1:Person ;
+    schema1:birthDate "1797-03-22T00:00:00Z",
+        "1798-03-22T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Eduard Gans" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Edward_Saïd a schema1:Person ;
+    schema1:birthDate "1935-11-01T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Edward Saïd" ;
+    schema1:nationality "Palestine mandataire",
+        "États-Unis" .
+
+ex:Edward_de_Bono a schema1:Person ;
+    schema1:birthDate "1933-05-19T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Edward de Bono" ;
+    schema1:nationality "Colonie de Malte et dépendances" .
+
+ex:Elie_Wiesel a schema1:Person ;
+    schema1:birthDate "1928-09-30T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Elie Wiesel" ;
+    schema1:nationality "Israël",
+        "Royaume de Hongrie",
+        "royaume de Roumanie",
+        "États-Unis" .
+
+ex:Emanuel_Lasker a schema1:Person ;
+    schema1:birthDate "1868-12-24T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Emanuel Lasker" ;
+    schema1:nationality "Empire allemand",
+        "République de Weimar" .
+
+ex:Emil_Fackenheim a schema1:Person ;
+    schema1:birthDate "1916-06-22T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Emil Fackenheim" ;
+    schema1:nationality "Allemagne" .
+
+ex:Emmanuel_Kant a schema1:Person ;
+    schema1:alumniOf "Johann Gottfried Teske",
+        "Martin Knutzen" ;
+    schema1:birthDate "1724-04-22T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Christian Jakob Kraus",
+        "Jacob Sigismund Beck",
+        "Johann Gottlieb Fichte",
+        "Marcus Herz" ;
+    schema1:knowsAbout "idéalisme allemand",
+        "siècle des Lumières" ;
+    schema1:name "Emmanuel Kant" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Erich_Adickes a schema1:Person ;
+    schema1:birthDate "1866-06-29T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Erich Adickes" ;
+    schema1:nationality "Empire allemand" .
+
+ex:Erich_Fromm a schema1:Person ;
+    schema1:alumniOf "Alfred Weber" ;
+    schema1:birthDate "1900-03-23T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "philosophie continentale",
+        "école de Francfort" ;
+    schema1:name "Erich Fromm" ;
+    schema1:nationality "Allemagne",
+        "Empire allemand",
+        "République de Weimar",
+        "Suisse" .
+
+ex:Ernst_Bloch a schema1:Person ;
+    schema1:birthDate "1885-07-08T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "surréalisme" ;
+    schema1:name "Ernst Bloch" ;
+    schema1:nationality "Allemagne",
+        "Royaume-Uni",
+        "Suisse",
+        "Tchéquie" .
+
+ex:Ernst_Cassirer a schema1:Person ;
+    schema1:birthDate "1874-05-28T00:00:00Z",
+        "1874-07-28T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "Marburg School" ;
+    schema1:name "Ernst Cassirer" ;
+    schema1:nationality "Royaume de Prusse",
+        "République de Weimar",
+        "Suède",
+        "Troisième Reich" .
+
+ex:Ernst_Haeckel a schema1:Person ;
+    schema1:alumniOf "Albert von Kölliker",
+        "Franz von Leydig",
+        "Rudolf Virchow" ;
+    schema1:birthDate "1834-02-16T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Heinrich Höhr",
+        "Nikolaï Mikloukho-Maklaï",
+        "Oscar Hertwig" ;
+    schema1:name "Ernst Haeckel" ;
+    schema1:nationality "Empire allemand",
+        "Royaume de Prusse",
+        "République de Weimar" .
+
+ex:Ernst_Krieck a schema1:Person ;
+    schema1:birthDate "1882-07-06T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Ernst Krieck" ;
+    schema1:nationality "Allemagne" .
+
+ex:Ernst_Laas a schema1:Person ;
+    schema1:birthDate "1837-06-16T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Paul Natorp" ;
+    schema1:name "Ernst Laas" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Ernst_Mayr a schema1:Person ;
+    schema1:alumniOf "Erwin Stresemann" ;
+    schema1:birthDate "1904-07-05T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Ernst Mayr" ;
+    schema1:nationality "Allemagne",
+        "États-Unis" .
+
+ex:Ernst_Nolte a schema1:Person ;
+    schema1:alumniOf "Martin Heidegger" ;
+    schema1:birthDate "1923-01-11T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Ernst Nolte" ;
+    schema1:nationality "Allemagne" .
+
+ex:Ernst_Tugendhat a schema1:Person ;
+    schema1:birthDate "1930-03-08T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Ernst Tugendhat" ;
+    schema1:nationality "Allemagne" .
+
+ex:Ernst_Zermelo a schema1:Person ;
+    schema1:alumniOf "Lazarus Fuchs" ;
+    schema1:birthDate "1871-07-27T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Ernst Zermelo" ;
+    schema1:nationality "Allemagne" .
+
+ex:Eugen_Fink a schema1:Person ;
+    schema1:alumniOf "Edmund Husserl" ;
+    schema1:birthDate "1905-12-11T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Eugen Fink" ;
+    schema1:nationality "Allemagne" .
+
+ex:Eugen_Rosenstock-Huessy a schema1:Person ;
+    schema1:birthDate "1888-07-06T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Eugen Rosenstock-Huessy" ;
+    schema1:nationality "Allemagne",
+        "États-Unis" .
+
+ex:Ferdinand_Tönnies a schema1:Person ;
+    schema1:alumniOf "Adolph Wagner",
+        "Ernst Engel",
+        "Richard Böckh",
+        "Theodor Storm",
+        "Wilhelm Wundt" ;
+    schema1:birthDate "1855-07-26T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Erich Rothacker" ;
+    schema1:name "Ferdinand Tönnies" ;
+    schema1:nationality "Allemagne" .
+
+ex:Fiodor_Dostoïevski a schema1:Person ;
+    schema1:birthDate "1821-11-11T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "réalisme" ;
+    schema1:name "Fiodor Dostoïevski" ;
+    schema1:nationality "Empire russe" .
+
+ex:Fiodor_Tiouttchev a schema1:Person ;
+    schema1:birthDate "1803-12-05T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "romantisme" ;
+    schema1:name "Fiodor Tiouttchev" ;
+    schema1:nationality "Empire russe" .
+
+ex:František_Lorenz a schema1:Person ;
+    schema1:birthDate "1872-12-24T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "František Lorenz" ;
+    schema1:nationality "Brésil",
+        "Tchécoslovaquie" .
+
+ex:Franz_Brentano a schema1:Person ;
+    schema1:alumniOf "Franz Jakob Clemens",
+        "Friedrich Adolf Trendelenburg" ;
+    schema1:birthDate "1838-01-16T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Alexius Meinong",
+        "Aloïs Riegl",
+        "Carl Stumpf",
+        "Christian von Ehrenfels",
+        "Edmund Husserl",
+        "Kazimierz Twardowski",
+        "Sigmund Freud",
+        "Tomáš Masaryk" ;
+    schema1:name "Franz Brentano" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Franz_Leopold_Neumann a schema1:Person ;
+    schema1:birthDate "1900-05-23T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Franz Leopold Neumann" ;
+    schema1:nationality "Empire allemand",
+        "République de Weimar" .
+
+ex:Franz_Oppenheimer a schema1:Person ;
+    schema1:birthDate "1864-03-30T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Franz Oppenheimer" ;
+    schema1:nationality "Allemagne",
+        "Empire allemand",
+        "Royaume de Prusse",
+        "République de Weimar" .
+
+ex:Friedrich-Albert_Lange a schema1:Person ;
+    schema1:birthDate "1828-09-28T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Friedrich-Albert Lange" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Friedrich_Blume a schema1:Person ;
+    schema1:birthDate "1893-01-05T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Friedrich Blume" ;
+    schema1:nationality "Allemagne" .
+
+ex:Friedrich_Engels a schema1:Person ;
+    schema1:birthDate "1820-11-28T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Friedrich Engels" ;
+    schema1:nationality "Royaume de Prusse",
+        "Royaume-Uni" .
+
+ex:Friedrich_Georg_Jünger a schema1:Person ;
+    schema1:birthDate "1898-09-01T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Friedrich Georg Jünger" ;
+    schema1:nationality "Allemagne" .
+
+ex:Friedrich_Hayek a schema1:Person ;
+    schema1:birthDate "1899-05-08T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Marjorie Grice-Hutchinson" ;
+    schema1:name "Friedrich Hayek" ;
+    schema1:nationality "Autriche",
+        "Royaume-Uni" .
+
+ex:Friedrich_Hielscher a schema1:Person ;
+    schema1:birthDate "1902-05-31T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Friedrich Hielscher" ;
+    schema1:nationality "Allemagne" .
+
+ex:Friedrich_Karl_Forberg a schema1:Person ;
+    schema1:birthDate "1770-08-30T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Friedrich Karl Forberg" ;
+    schema1:nationality "duché de Saxe-Altenbourg" .
+
+ex:Friedrich_Kittler a schema1:Person ;
+    schema1:birthDate "1943-06-12T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Friedrich Kittler" ;
+    schema1:nationality "Allemagne" .
+
+ex:Friedrich_Meinecke a schema1:Person ;
+    schema1:birthDate "1862-10-30T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Friedrich Meinecke" ;
+    schema1:nationality "Allemagne" .
+
+ex:Friedrich_Nietzsche a schema1:Person ;
+    schema1:alumniOf "Friedrich Wilhelm Ritschl",
+        "Jacob Burckhardt" ;
+    schema1:birthDate "1844-10-15T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Rudolf Steiner" ;
+    schema1:knowsAbout "philosophie de la vie" ;
+    schema1:name "Friedrich Nietzsche" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Friedrich_Paulsen a schema1:Person ;
+    schema1:birthDate "1846-07-16T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Günther Jacoby" ;
+    schema1:name "Friedrich Paulsen" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Friedrich_Schiller a schema1:Person ;
+    schema1:alumniOf "Balthasar Haug" ;
+    schema1:birthDate "1759-11-10T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "Classicisme de Weimar",
+        "Sturm und Drang" ;
+    schema1:name "Friedrich Schiller" ;
+    schema1:nationality "duché de Saxe-Weimar",
+        "duché de Wurtemberg" .
+
+ex:Friedrich_Theodor_Vischer a schema1:Person ;
+    schema1:birthDate "1807-06-30T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Friedrich Theodor Vischer" ;
+    schema1:nationality "Royaume du Wurtemberg" .
+
+ex:Friedrich_Wilhelm_Foerster a schema1:Person ;
+    schema1:birthDate "1869-06-02T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Friedrich Wilhelm Foerster" ;
+    schema1:nationality "Allemagne" .
+
+ex:Friedrich_Wilhelm_Joseph_von_Schelling a schema1:Person ;
+    schema1:alumniOf "Christian Friedrich von Schnurrer",
+        "Gottlob Christian Storr",
+        "Johann Friedrich Flatt",
+        "Johann Friedrich LeBret",
+        "Johann Gottlieb Fichte",
+        "Ludwig Joseph Uhland" ;
+    schema1:birthDate "1775-01-27T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Félix Ravaisson",
+        "Johann Erich Berger" ;
+    schema1:knowsAbout "idéalisme allemand" ;
+    schema1:name "Friedrich Wilhelm Joseph von Schelling" ;
+    schema1:nationality "Royaume du Wurtemberg" .
+
+ex:Friedrich_von_Adelung a schema1:Person ;
+    schema1:birthDate "1768-02-25T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Friedrich von Adelung" ;
+    schema1:nationality "Empire russe",
+        "Royaume de Prusse" .
+
+ex:Fritz_Mauthner a schema1:Person ;
+    schema1:birthDate "1849-11-22T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Fritz Mauthner" ;
+    schema1:nationality "Allemagne",
+        "Autriche",
+        "Cisleithanie" .
+
+ex:Frédéric_Bastiat a schema1:Person ;
+    schema1:birthDate "1801-06-30T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Frédéric Bastiat" ;
+    schema1:nationality "France" .
+
+ex:Gabriel_Bonnot_de_Mably a schema1:Person ;
+    schema1:birthDate "1709-03-14T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Gabriel Bonnot de Mably" ;
+    schema1:nationality "France" .
+
+ex:Georg_Christoph_Lichtenberg a schema1:Person ;
+    schema1:birthDate "1742-07-01T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Alexander von Humboldt",
+        "Carl Friedrich Kielmeyer",
+        "George Byng",
+        "Johann Georg Wilhelm von Raison" ;
+    schema1:name "Georg Christoph Lichtenberg" ;
+    schema1:nationality "landgraviat de Hesse-Darmstadt" .
+
+ex:Georg_Friedrich_Daumer a schema1:Person ;
+    schema1:birthDate "1800-03-05T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Georg Friedrich Daumer" ;
+    schema1:nationality "royaume de Bavière" .
+
+ex:Georg_Hermes a schema1:Person ;
+    schema1:birthDate "1775-04-22T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Georg Hermes" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Georg_Jellinek a schema1:Person ;
+    schema1:birthDate "1851-06-16T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Georg Jellinek" ;
+    schema1:nationality "royaume de Saxe" .
+
+ex:Georg_Sverdrup a schema1:Person ;
+    schema1:birthDate "1770-04-25T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Georg Sverdrup" ;
+    schema1:nationality "Norvège" .
+
+ex:Georg_Wilhelm_Friedrich_Hegel a schema1:Person ;
+    schema1:birthDate "1770-08-27T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Max Stirner" ;
+    schema1:knowsAbout "historicisme",
+        "hégélianisme",
+        "idéalisme allemand" ;
+    schema1:name "Georg Wilhelm Friedrich Hegel" ;
+    schema1:nationality "Royaume du Wurtemberg" .
+
+ex:George_Soros a schema1:Person ;
+    schema1:alumniOf "Harold Laski",
+        "Karl Popper" ;
+    schema1:birthDate "1930-08-12T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "George Soros" ;
+    schema1:nationality "Hongrie",
+        "États-Unis" .
+
+ex:Gerhart_Riegner a schema1:Person ;
+    schema1:birthDate "1911-09-12T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Gerhart Riegner" ;
+    schema1:nationality "Allemagne" .
+
+ex:Gotthard_Günther a schema1:Person ;
+    schema1:birthDate "1900-06-15T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Gotthard Günther" ;
+    schema1:nationality "Allemagne" .
+
+ex:Gotthilf_Heinrich_von_Schubert a schema1:Person ;
+    schema1:birthDate "1780-04-26T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Gotthilf Heinrich von Schubert" ;
+    schema1:nationality "royaume de Saxe" .
+
+ex:Gotthold_Ephraim_Lessing a schema1:Person ;
+    schema1:birthDate "1729-01-22T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Gotthold Ephraim Lessing" ;
+    schema1:nationality "électorat de Saxe" .
+
+ex:Grete_Hermann a schema1:Person ;
+    schema1:alumniOf "Edmund Landau",
+        "Emmy Noether" ;
+    schema1:birthDate "1901-03-02T00:00:00Z" ;
+    schema1:gender "féminin" ;
+    schema1:name "Grete Hermann" ;
+    schema1:nationality "Allemagne",
+        "Royaume-Uni" .
+
+ex:Gustav_Landauer a schema1:Person ;
+    schema1:birthDate "1870-04-07T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Gustav Landauer" ;
+    schema1:nationality "Allemagne" .
+
+ex:Günter_Ralfs a schema1:Person ;
+    schema1:birthDate "1899-12-17T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Günter Ralfs" ;
+    schema1:nationality "Allemagne" .
+
+ex:Hannah_Arendt a schema1:Person ;
+    schema1:alumniOf "Karl Jaspers",
+        "Martin Heidegger" ;
+    schema1:birthDate "1906-10-14T00:00:00Z" ;
+    schema1:gender "féminin" ;
+    schema1:knowsAbout "phénoménologie" ;
+    schema1:name "Hannah Arendt" ;
+    schema1:nationality "Prusse",
+        "apatride",
+        "États-Unis" .
+
+ex:Hans-Josef_Becker a schema1:Person ;
+    schema1:birthDate "1948-06-18T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Hans-Josef Becker" ;
+    schema1:nationality "Allemagne" .
+
+ex:Hans_Albert a schema1:Person ;
+    schema1:birthDate "1921-02-08T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "philosophie occidentale" ;
+    schema1:name "Hans Albert" ;
+    schema1:nationality "Allemagne" .
+
+ex:Hans_Blüher a schema1:Person ;
+    schema1:birthDate "1888-02-17T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Hans Blüher" ;
+    schema1:nationality "Allemagne de l'Ouest",
+        "Empire allemand",
+        "République de Weimar",
+        "Troisième Reich" .
+
+ex:Hans_Driesch a schema1:Person ;
+    schema1:birthDate "1867-10-28T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Hans Driesch" ;
+    schema1:nationality "Empire allemand",
+        "République de Weimar",
+        "Troisième Reich" .
+
+ex:Hans_Jonas a schema1:Person ;
+    schema1:birthDate "1903-05-10T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Hans Jonas" ;
+    schema1:nationality "Allemagne" .
+
+ex:Hans_Lenk a schema1:Person ;
+    schema1:birthDate "1935-03-23T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Hans Lenk" ;
+    schema1:nationality "Allemagne" .
+
+ex:Harald_Lesch a schema1:Person ;
+    schema1:birthDate "1960-07-28T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Harald Lesch" ;
+    schema1:nationality "Allemagne" .
+
+ex:Harald_Weinrich a schema1:Person ;
+    schema1:birthDate "1927-09-24T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Harald Weinrich" ;
+    schema1:nationality "Allemagne" .
+
+ex:Hedwig_Conrad-Martius a schema1:Person ;
+    schema1:birthDate "1888-02-27T00:00:00Z" ;
+    schema1:gender "féminin" ;
+    schema1:name "Hedwig Conrad-Martius" ;
+    schema1:nationality "Allemagne" .
+
+ex:Heinrich_Eberhard_Gottlob_Paulus a schema1:Person ;
+    schema1:birthDate "1761-09-01T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Heinrich Eberhard Gottlob Paulus" ;
+    schema1:nationality "Royaume du Wurtemberg" .
+
+ex:Heinrich_Rudolf_Hertz a schema1:Person ;
+    schema1:alumniOf "Hermann Ludwig von Helmholtz" ;
+    schema1:birthDate "1857-02-22T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Heinrich Rudolf Hertz" ;
+    schema1:nationality "Hambourg" .
+
+ex:Heinrich_Steffens a schema1:Person ;
+    schema1:birthDate "1773-05-02T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Karl Otfried Müller" ;
+    schema1:name "Heinrich Steffens" ;
+    schema1:nationality "Norvège",
+        "Royaume de Prusse" .
+
+ex:Henri_Ahrens a schema1:Person ;
+    schema1:birthDate "1808-07-14T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Henri Ahrens" ;
+    schema1:nationality "Empire allemand" .
+
+ex:Henri_Bergson a schema1:Person ;
+    schema1:alumniOf "Félix Ravaisson",
+        "Émile Boutroux" ;
+    schema1:birthDate "1859-10-18T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Albert Thibaudet",
+        "Gabriel Marcel",
+        "Joseph Baruzi",
+        "Louis Lavelle",
+        "Marcel Proust",
+        "Émile Bréhier" ;
+    schema1:knowsAbout "philosophie continentale" ;
+    schema1:name "Henri Bergson" ;
+    schema1:nationality "France" .
+
+ex:Herbert_Marcuse a schema1:Person ;
+    schema1:birthDate "1898-07-19T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "école de Francfort" ;
+    schema1:name "Herbert Marcuse" ;
+    schema1:nationality "Allemagne",
+        "Allemagne de l'Ouest",
+        "République de Weimar",
+        "Suisse",
+        "États-Unis" .
+
+ex:Hermann_Friedmann a schema1:Person ;
+    schema1:birthDate "1873-04-11T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Hermann Friedmann" ;
+    schema1:nationality "Allemagne",
+        "Pologne",
+        "grand-duché de Finlande" .
+
+ex:Hermann_Heller a schema1:Person ;
+    schema1:birthDate "1891-07-17T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Hermann Heller" ;
+    schema1:nationality "Autriche",
+        "République de Weimar" .
+
+ex:Hermann_Hesse a schema1:Person ;
+    schema1:birthDate "1877-07-02T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "existentialisme" ;
+    schema1:name "Hermann Hesse" ;
+    schema1:nationality "Allemagne",
+        "Empire allemand",
+        "Suisse" .
+
+ex:Hermann_Kretzschmar a schema1:Person ;
+    schema1:birthDate "1848-01-19T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Hermann Kretzschmar" ;
+    schema1:nationality "Allemagne" .
+
+ex:Hermann_Ludwig_von_Helmholtz a schema1:Person ;
+    schema1:alumniOf "Johannes Peter Müller" ;
+    schema1:birthDate "1821-08-31T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Aleksey Sokolov",
+        "August Heller",
+        "Heinrich Rudolf Hertz",
+        "Theodor Karl Gustav von Leber",
+        "William James" ;
+    schema1:name "Hermann Ludwig von Helmholtz" ;
+    schema1:nationality "Reich allemand",
+        "Royaume de Prusse" .
+
+ex:Hieronymus_Lorm a schema1:Person ;
+    schema1:birthDate "1821-08-09T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Hieronymus Lorm" ;
+    schema1:nationality "Autriche-Hongrie" .
+
+ex:Houston_Stewart_Chamberlain a schema1:Person ;
+    schema1:birthDate "1855-09-09T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Houston Stewart Chamberlain" ;
+    schema1:nationality "Royaume-Uni de Grande-Bretagne et d'Irlande",
+        "République de Weimar" .
+
+ex:Hu_Shi a schema1:Person ;
+    schema1:birthDate "1891-12-17T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "Mouvement pour la nouvelle culture",
+        "Q10264717" ;
+    schema1:name "Hu Shi" ;
+    schema1:nationality "Taïwan",
+        "dynastie Qing",
+        "république de Chine" .
+
+ex:Hugo_Münsterberg a schema1:Person ;
+    schema1:birthDate "1863-06-01T00:00:00Z",
+        "1863-07-01T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Hugo Münsterberg" ;
+    schema1:nationality "Royaume de Prusse",
+        "États-Unis" .
+
+ex:Innokenti_Annenski a schema1:Person ;
+    schema1:birthDate "1855-09-01T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Innokenti Annenski" ;
+    schema1:nationality "Empire russe" .
+
+ex:Isaiah_Berlin a schema1:Person ;
+    schema1:birthDate "1909-06-06T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Geoffrey Midgley" ;
+    schema1:name "Isaiah Berlin" ;
+    schema1:nationality "Empire russe",
+        "Royaume-Uni" .
+
+ex:Ivan_Efremov a schema1:Person ;
+    schema1:alumniOf "Piotr Souchkine" ;
+    schema1:birthDate "1908-04-23T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Ivan Efremov" ;
+    schema1:nationality "Empire russe",
+        "Union soviétique" .
+
+ex:Jacob_Bernays a schema1:Person ;
+    schema1:alumniOf "Friedrich Gottlieb Welcker" ;
+    schema1:birthDate "1824-09-11T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Jacob Bernays" ;
+    schema1:nationality "Hambourg" .
+
+ex:Jacob_Burckhardt a schema1:Person ;
+    schema1:alumniOf "Franz Theodor Kugler",
+        "Leopold van Ranke" ;
+    schema1:birthDate "1818-05-25T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Friedrich Nietzsche",
+        "Heinrich Wölfflin",
+        "Hermann Wirz",
+        "Lucian Blaga" ;
+    schema1:name "Jacob Burckhardt" ;
+    schema1:nationality "Suisse" .
+
+ex:Jacob_Sigismund_Beck a schema1:Person ;
+    schema1:alumniOf "Christian Jakob Kraus",
+        "Emmanuel Kant",
+        "Johann Schultz" ;
+    schema1:birthDate "1761-08-06T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Jacob Sigismund Beck" .
+
+ex:Jacques_Maritain a schema1:Person ;
+    schema1:alumniOf "Henri Bergson" ;
+    schema1:birthDate "1882-11-18T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "droits humains",
+        "démocratie chrétienne",
+        "humanisme chrétien",
+        "personnalisme communautaire" ;
+    schema1:name "Jacques Maritain" ;
+    schema1:nationality "France" .
+
+ex:Jakob_Friedrich_von_Abel a schema1:Person ;
+    schema1:birthDate "1751-05-09T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Jakob Friedrich von Abel" ;
+    schema1:nationality "Allemagne" .
+
+ex:James_Madison a schema1:Person ;
+    schema1:birthDate "1751-03-16T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "James Madison" ;
+    schema1:nationality "États-Unis" .
+
+ex:Jean-Henri_Newman a schema1:Person ;
+    schema1:birthDate "1801-02-21T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Hilaire Belloc" ;
+    schema1:name "Jean-Henri Newman" ;
+    schema1:nationality "Royaume-Uni de Grande-Bretagne et d'Irlande" .
+
+ex:Jean-Jacques_Rousseau a schema1:Person ;
+    schema1:birthDate "1712-06-28T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Louis Stanislas de Girardin" ;
+    schema1:knowsAbout "contrat social",
+        "musique baroque" ;
+    schema1:name "Jean-Jacques Rousseau" ;
+    schema1:nationality "République de Genève" .
+
+ex:Jean-Paul_II a schema1:Person ;
+    schema1:birthDate "1920-05-18T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Jean-Paul II" ;
+    schema1:nationality "Pologne" .
+
+ex:Jean-Paul_Sartre a schema1:Person ;
+    schema1:birthDate "1905-06-21T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "athéisme",
+        "existentialisme",
+        "marxisme",
+        "philosophie continentale",
+        "philosophie française",
+        "phénoménologie" ;
+    schema1:name "Jean-Paul Sartre" ;
+    schema1:nationality "France" .
+
+ex:Jean_Améry a schema1:Person ;
+    schema1:birthDate "1912-10-31T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Jean Améry" ;
+    schema1:nationality "Autriche" .
+
+ex:Jiří_Gruša a schema1:Person ;
+    schema1:birthDate "1938-11-10T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Jiří Gruša" ;
+    schema1:nationality "Allemagne",
+        "Allemagne de l'Ouest",
+        "Tchécoslovaquie",
+        "Tchéquie" .
+
+ex:Joachim_Heinrich_Campe a schema1:Person ;
+    schema1:birthDate "1746-06-29T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Joachim Heinrich Campe" ;
+    schema1:nationality "duché de Brunswick" .
+
+ex:Johann_Baptist_von_Spix a schema1:Person ;
+    schema1:birthDate "1781-02-09T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Johann Baptist von Spix" ;
+    schema1:nationality "royaume de Bavière" .
+
+ex:Johann_David_Michaelis a schema1:Person ;
+    schema1:alumniOf "Christian Benedict Michaelis",
+        "Siegmund Jakob Baumgarten" ;
+    schema1:birthDate "1717-02-27T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "August Ludwig Schlözer",
+        "Johann August von Starck",
+        "Johann Gottfried Eichhorn" ;
+    schema1:name "Johann David Michaelis" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Johann_Eduard_Erdmann a schema1:Person ;
+    schema1:birthDate "1805-06-13T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Johann Eduard Erdmann" ;
+    schema1:nationality "Empire russe",
+        "Royaume de Prusse" .
+
+ex:Johann_Heinrich_Abicht a schema1:Person ;
+    schema1:birthDate "1762-05-04T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Johann Heinrich Abicht" ;
+    schema1:nationality "Empire russe",
+        "principauté de Schwarzbourg-Rudolstadt" .
+
+ex:Johann_Joachim_Spalding a schema1:Person ;
+    schema1:birthDate "1714-11-01T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Johann Joachim Spalding" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Johann_Karl_Simon_Morgenstern a schema1:Person ;
+    schema1:birthDate "1770-08-28T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Johann Karl Simon Morgenstern" ;
+    schema1:nationality "Empire russe",
+        "Royaume de Prusse" .
+
+ex:Johann_Peter_Eckermann a schema1:Person ;
+    schema1:birthDate "1792-09-21T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Johann Peter Eckermann" ;
+    schema1:nationality "royaume de Hanovre" .
+
+ex:Johann_Salomo_Semler a schema1:Person ;
+    schema1:alumniOf "Siegmund Jakob Baumgarten" ;
+    schema1:birthDate "1725-12-18T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Raymund Dapp" ;
+    schema1:name "Johann Salomo Semler" ;
+    schema1:nationality "Allemagne" .
+
+ex:Johann_Wolfgang_von_Goethe a schema1:Person ;
+    schema1:alumniOf "Adam Friedrich Oeser",
+        "Jean Schweighaeuser",
+        "Justus Christian Loder" ;
+    schema1:birthDate "1749-08-28T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "Classicisme de Weimar",
+        "Sturm und Drang",
+        "siècle des Lumières" ;
+    schema1:name "Johann Wolfgang von Goethe" ;
+    schema1:nationality "grand-duché de Saxe-Weimar-Eisenach" .
+
+ex:Johannes_Nikolaus_Tetens a schema1:Person ;
+    schema1:birthDate "1736-09-16T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Johannes Nikolaus Tetens" ;
+    schema1:nationality "Allemagne",
+        "Royaume du Danemark" .
+
+ex:John_Grinder a schema1:Person ;
+    schema1:birthDate "1940-01-10T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Steve Andreas" ;
+    schema1:name "John Grinder" ;
+    schema1:nationality "États-Unis" .
+
+ex:John_Maynard_Keynes a schema1:Person ;
+    schema1:alumniOf "Alfred Marshall",
+        "William Ernest Johnson" ;
+    schema1:birthDate "1883-06-05T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "Bloomsbury Group" ;
+    schema1:name "John Maynard Keynes" ;
+    schema1:nationality "Royaume-Uni",
+        "Royaume-Uni de Grande-Bretagne et d'Irlande" .
+
+ex:John_Stuart_Mill a schema1:Person ;
+    schema1:alumniOf "Jeremy Bentham" ;
+    schema1:birthDate "1806-05-20T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "athéisme",
+        "libéralisme",
+        "utilitarisme",
+        "égalitarisme" ;
+    schema1:name "John Stuart Mill" ;
+    schema1:nationality "Royaume-Uni de Grande-Bretagne et d'Irlande" .
+
+ex:Josef_Ludvik_Fischer a schema1:Person ;
+    schema1:birthDate "1894-11-06T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Josef Ludvik Fischer" ;
+    schema1:nationality "Royaume des Pays-Bas" .
+
+ex:Joseph_Gredt a schema1:Person ;
+    schema1:birthDate "1863-07-30T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Joseph Gredt" ;
+    schema1:nationality "Luxembourg" .
+
+ex:Judith_Sargent_Murray a schema1:Person ;
+    schema1:birthDate "1751-05-01T00:00:00Z" ;
+    schema1:gender "féminin" ;
+    schema1:name "Judith Sargent Murray" ;
+    schema1:nationality "États-Unis" .
+
+ex:Julien_Offray_de_La_Mettrie a schema1:Person ;
+    schema1:birthDate "1709-12-12T00:00:00Z",
+        "1709-12-25T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "athéisme",
+        "matérialisme" ;
+    schema1:name "Julien Offray de La Mettrie" ;
+    schema1:nationality "France" .
+
+ex:Julius_Langbehn a schema1:Person ;
+    schema1:birthDate "1851-03-26T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Julius Langbehn" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Justus_Möser a schema1:Person ;
+    schema1:birthDate "1720-12-14T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Justus Möser" ;
+    schema1:nationality "Allemagne" .
+
+ex:Karl-Otto_Apel a schema1:Person ;
+    schema1:birthDate "1922-03-15T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Karl-Otto Apel" ;
+    schema1:nationality "Allemagne" .
+
+ex:Karl_Joel a schema1:Person ;
+    schema1:birthDate "1864-03-27T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Karl Joel" ;
+    schema1:nationality "Allemagne" .
+
+ex:Karl_Korsch a schema1:Person ;
+    schema1:birthDate "1886-08-15T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "philosophie continentale" ;
+    schema1:name "Karl Korsch" ;
+    schema1:nationality "Allemagne" .
+
+ex:Karl_Lamprecht a schema1:Person ;
+    schema1:birthDate "1856-02-25T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Karl Lamprecht" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Karl_Ludwig_Michelet a schema1:Person ;
+    schema1:birthDate "1801-12-04T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "August Cieszkowski",
+        "David Strauss" ;
+    schema1:name "Karl Ludwig Michelet" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Karl_Marx a schema1:Person ;
+    schema1:alumniOf "Friedrich Gottlieb Welcker" ;
+    schema1:birthDate "1818-05-05T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Karl Marx" ;
+    schema1:nationality "Royaume de Prusse",
+        "Royaume-Uni",
+        "apatride" .
+
+ex:Karl_Rosenkranz a schema1:Person ;
+    schema1:birthDate "1805-04-23T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Karl Rosenkranz" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Karl_Wilhelm_Ferdinand_Solger a schema1:Person ;
+    schema1:birthDate "1780-11-28T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Karl Otfried Müller" ;
+    schema1:name "Karl Wilhelm Ferdinand Solger" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Karl_von_Eckartshausen a schema1:Person ;
+    schema1:birthDate "1752-06-28T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Karl von Eckartshausen" ;
+    schema1:nationality "Allemagne" .
+
+ex:Karoline_von_Günderrode a schema1:Person ;
+    schema1:birthDate "1780-02-11T00:00:00Z" ;
+    schema1:gender "féminin" ;
+    schema1:name "Karoline von Günderrode" ;
+    schema1:nationality "Allemagne" .
+
+ex:Kedar_Joshi a schema1:Person ;
+    schema1:birthDate "1979-12-31T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Kedar Joshi" ;
+    schema1:nationality "Inde" .
+
+ex:Khalil_Gibran a schema1:Person ;
+    schema1:alumniOf "Pierre Amédée Marcel-Béronneau" ;
+    schema1:birthDate "1883-01-06T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "Mahjar",
+        "symbolisme" ;
+    schema1:name "Khalil Gibran" ;
+    schema1:nationality "Empire ottoman",
+        "République libanaise sous mandat français",
+        "État du Grand Liban" .
+
+ex:Kit_Fine a schema1:Person ;
+    schema1:birthDate "1946-03-26T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Steven Kuhn" ;
+    schema1:name "Kit Fine" ;
+    schema1:nationality "Royaume-Uni" .
+
+ex:Kitarō_Nishida a schema1:Person ;
+    schema1:alumniOf "Hōjō Tokiyuki" ;
+    schema1:birthDate "1870-05-19T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "École de Kyoto" ;
+    schema1:name "Kitarō Nishida" ;
+    schema1:nationality "Japon" .
+
+ex:Kurd_Laßwitz a schema1:Person ;
+    schema1:birthDate "1848-04-20T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Kurd Laßwitz" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Kurt_Gödel a schema1:Person ;
+    schema1:alumniOf "Philipp Furtwängler" ;
+    schema1:birthDate "1906-04-28T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Kurt Gödel" ;
+    schema1:nationality "Autriche",
+        "Cisleithanie",
+        "Tchécoslovaquie",
+        "États-Unis" .
+
+ex:Larry_Sanger a schema1:Person ;
+    schema1:birthDate "1968-07-16T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Larry Sanger" ;
+    schema1:nationality "États-Unis" .
+
+ex:Leonard_Nelson a schema1:Person ;
+    schema1:birthDate "1882-07-11T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Leonard Nelson" ;
+    schema1:nationality "Allemagne" .
+
+ex:Lewis_Carroll a schema1:Person ;
+    schema1:birthDate "1832-01-27T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Lewis Carroll" ;
+    schema1:nationality "Royaume-Uni de Grande-Bretagne et d'Irlande" .
+
+ex:Lionel_Giles a schema1:Person ;
+    schema1:birthDate "1875-12-29T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Lionel Giles" ;
+    schema1:nationality "Royaume-Uni" .
+
+ex:Lorenz_Christoph_Mizler a schema1:Person ;
+    schema1:birthDate "1711-07-26T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Lorenz Christoph Mizler" ;
+    schema1:nationality "Allemagne" .
+
+ex:Lou_Andreas-Salomé a schema1:Person ;
+    schema1:alumniOf "Sigmund Freud" ;
+    schema1:birthDate "1861-02-12T00:00:00Z" ;
+    schema1:gender "féminin" ;
+    schema1:name "Lou Andreas-Salomé" ;
+    schema1:nationality "Reich allemand" .
+
+ex:Louis-Claude_de_Saint-Martin a schema1:Person ;
+    schema1:birthDate "1743-01-18T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "mystique" ;
+    schema1:name "Louis-Claude de Saint-Martin" ;
+    schema1:nationality "France" .
+
+ex:Louis_Couturat a schema1:Person ;
+    schema1:alumniOf "Alphonse Darlu" ;
+    schema1:birthDate "1868-01-17T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Louis Couturat" ;
+    schema1:nationality "France" .
+
+ex:Luce_Irigaray a schema1:Person ;
+    schema1:birthDate "1930-05-03T00:00:00Z" ;
+    schema1:gender "féminin" ;
+    schema1:name "Luce Irigaray" ;
+    schema1:nationality "Belgique",
+        "France" .
+
+ex:Ludwig_Büchner a schema1:Person ;
+    schema1:birthDate "1824-03-29T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "athéisme",
+        "libre-pensée",
+        "scientific materialism" ;
+    schema1:name "Ludwig Büchner" ;
+    schema1:nationality "grand-duché de Hesse" .
+
+ex:Ludwig_Geiger a schema1:Person ;
+    schema1:birthDate "1848-06-05T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Ludwig Geiger" ;
+    schema1:nationality "Reich allemand" .
+
+ex:Ludwig_Wittgenstein a schema1:Person ;
+    schema1:birthDate "1889-04-26T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Alice Ambrose",
+        "G. E. M. Anscombe" ;
+    schema1:knowsAbout "philosophie analytique" ;
+    schema1:name "Ludwig Wittgenstein" ;
+    schema1:nationality "Autriche",
+        "Royaume-Uni" .
+
+ex:Lujo_Brentano a schema1:Person ;
+    schema1:birthDate "1844-12-18T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Rudolf Meerwarth" ;
+    schema1:name "Lujo Brentano" ;
+    schema1:nationality "Empire allemand" .
+
+ex:László_Katus a schema1:Person ;
+    schema1:birthDate "1927-07-13T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "László Katus" ;
+    schema1:nationality "Hongrie" .
+
+ex:Léon_Denis a schema1:Person ;
+    schema1:birthDate "1846-01-01T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Léon Denis" ;
+    schema1:nationality "France" .
+
+ex:Léon_Tolstoï a schema1:Person ;
+    schema1:birthDate "1828-09-09T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Isaak Feynerman",
+        "Vasily Morozov" ;
+    schema1:knowsAbout "réalisme" ;
+    schema1:name "Léon Tolstoï" ;
+    schema1:nationality "Empire russe" .
+
+ex:Léon_Trotski a schema1:Person ;
+    schema1:birthDate "1879-11-07T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "trotskisme" ;
+    schema1:name "Léon Trotski" ;
+    schema1:nationality "Empire russe",
+        "Mexique",
+        "Russie soviétique",
+        "Union soviétique",
+        "république socialiste soviétique d'Ukraine" .
+
+ex:Mahatma_Gandhi a schema1:Person ;
+    schema1:alumniOf "Shrimad Rajchandra" ;
+    schema1:birthDate "1869-10-02T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Vinoba Bhave" ;
+    schema1:knowsAbout "non-violence" ;
+    schema1:name "Mahatma Gandhi" ;
+    schema1:nationality "Inde" .
+
+ex:Mao_Zedong a schema1:Person ;
+    schema1:alumniOf "Li Yuanfu" ;
+    schema1:birthDate "1893-12-26T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "marxisme-léninisme-maoïsme" ;
+    schema1:name "Mao Zedong" ;
+    schema1:nationality "République soviétique chinoise",
+        "dynastie Qing",
+        "république de Chine",
+        "république populaire de Chine" .
+
+ex:Marcel_Duchamp a schema1:Person ;
+    schema1:birthDate "1887-07-28T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "Dada",
+        "art conceptuel",
+        "surréalisme" ;
+    schema1:name "Marcel Duchamp" ;
+    schema1:nationality "France",
+        "États-Unis" .
+
+ex:Mario_Vargas_Llosa a schema1:Person ;
+    schema1:alumniOf "Isaac Humala Núñez",
+        "Luis Jaime Cisneros",
+        "Raúl Porras Barrenechea" ;
+    schema1:birthDate "1936-03-28T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "boom latino-américain",
+        "réalisme magique" ;
+    schema1:name "Mario Vargas Llosa" ;
+    schema1:nationality "Espagne",
+        "Pérou",
+        "République dominicaine" .
+
+ex:Martin_Gerbert a schema1:Person ;
+    schema1:birthDate "1720-08-11T00:00:00Z",
+        "1720-08-13T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Martin Gerbert" ;
+    schema1:nationality "Allemagne" .
+
+ex:Martin_Heidegger a schema1:Person ;
+    schema1:alumniOf "Edmund Husserl",
+        "Heinrich Rickert",
+        "Karl Braig" ;
+    schema1:birthDate "1889-09-26T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Alberto Wagner de Reyna",
+        "Carlos Astrada",
+        "Charles Malik",
+        "Emmanuel Levinas",
+        "Ernesto Mayz Vallenilla",
+        "Ernst Nolte",
+        "Günther Anders",
+        "Hannah Arendt",
+        "Jan Patočka",
+        "Karl Löwith",
+        "Karl Rahner",
+        "Sigrid Hunke" ;
+    schema1:knowsAbout "Révolution conservatrice" ;
+    schema1:name "Martin Heidegger" ;
+    schema1:nationality "Allemagne de l'Ouest",
+        "République de Weimar",
+        "Troisième Reich" .
+
+ex:Maurice_Maeterlinck a schema1:Person ;
+    schema1:birthDate "1862-08-29T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "symbolisme" ;
+    schema1:name "Maurice Maeterlinck" ;
+    schema1:nationality "Belgique" .
+
+ex:Max_Bense a schema1:Person ;
+    schema1:birthDate "1910-02-07T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Max Bense" ;
+    schema1:nationality "Allemagne" .
+
+ex:Max_Planck a schema1:Person ;
+    schema1:alumniOf "Gustav Bauer",
+        "Philipp Ludwig von Seidel" ;
+    schema1:birthDate "1858-04-23T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Gustav Ludwig Hertz",
+        "Max Abraham",
+        "Max von Laue",
+        "Moritz Schlick",
+        "Walter Schottky",
+        "Walther Bothe",
+        "Walther Meißner" ;
+    schema1:name "Max Planck" ;
+    schema1:nationality "Reich allemand" .
+
+ex:Max_Weber a schema1:Person ;
+    schema1:birthDate "1864-04-21T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Alfred Schütz",
+        "Harold Garfinkel" ;
+    schema1:name "Max Weber" ;
+    schema1:nationality "Allemagne",
+        "Confédération de l'Allemagne du Nord",
+        "Empire allemand",
+        "Royaume de Prusse",
+        "République de Weimar" .
+
+ex:Michael_Schmidt-Salomon a schema1:Person ;
+    schema1:birthDate "1967-09-14T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Michael Schmidt-Salomon" ;
+    schema1:nationality "Allemagne" .
+
+ex:Michel_Foucault a schema1:Person ;
+    schema1:alumniOf "Daniel Lagache",
+        "Georges Canguilhem",
+        "Jean Hyppolite",
+        "Louis Althusser",
+        "Maurice Merleau-Ponty" ;
+    schema1:birthDate "1926-10-15T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Jacques Derrida" ;
+    schema1:knowsAbout "athéisme",
+        "philosophie continentale",
+        "post-structuralisme" ;
+    schema1:name "Michel Foucault" ;
+    schema1:nationality "France" .
+
+ex:Michel_Onfray a schema1:Person ;
+    schema1:birthDate "1959-01-01T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "athéisme",
+        "euroscepticisme",
+        "hédonisme",
+        "libertarianisme",
+        "matérialisme",
+        "philosophie continentale" ;
+    schema1:name "Michel Onfray" ;
+    schema1:nationality "France" .
+
+ex:Mikhaïl_Bakounine a schema1:Person ;
+    schema1:birthDate "1814-05-30T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "anarchisme",
+        "athéisme",
+        "philosophie occidentale",
+        "socialisme libertaire" ;
+    schema1:name "Mikhaïl Bakounine" ;
+    schema1:nationality "Empire russe",
+        "France",
+        "Russie" .
+
+ex:Mikhaïl_Lomonossov a schema1:Person ;
+    schema1:alumniOf "Christian Wolff",
+        "Johann Friedrich Henckel" ;
+    schema1:birthDate "1711-11-19T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Stepan Roumovski" ;
+    schema1:name "Mikhaïl Lomonossov" ;
+    schema1:nationality "Empire russe" .
+
+ex:Mircea_Eliade a schema1:Person ;
+    schema1:birthDate "1907-03-22T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Mircea Eliade" ;
+    schema1:nationality "République socialiste de Roumanie",
+        "royaume de Roumanie",
+        "États-Unis" .
+
+ex:Moritz_Schlick a schema1:Person ;
+    schema1:alumniOf "Max Planck" ;
+    schema1:birthDate "1882-04-14T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Friedrich Waismann" ;
+    schema1:name "Moritz Schlick" ;
+    schema1:nationality "Allemagne" .
+
+ex:Moritz_Wilhelm_Drobisch a schema1:Person ;
+    schema1:alumniOf "Karl Mollweide",
+        "Wilhelm Traugott Krug" ;
+    schema1:birthDate "1802-08-16T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Moritz Wilhelm Drobisch" ;
+    schema1:nationality "royaume de Saxe" .
+
+ex:Nicolas_de_Condorcet a schema1:Person ;
+    schema1:birthDate "1743-09-17T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "Lumières" ;
+    schema1:name "Nicolas de Condorcet" ;
+    schema1:nationality "France" .
+
+ex:Noam_Chomsky a schema1:Person ;
+    schema1:alumniOf "Nelson Goodman",
+        "Roman Jakobson",
+        "Zellig Harris" ;
+    schema1:birthDate "1928-12-07T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "anarcho-syndicalisme",
+        "athéisme",
+        "mouvement antiguerre",
+        "nouvelle gauche" ;
+    schema1:name "Noam Chomsky" ;
+    schema1:nationality "États-Unis" .
+
+ex:Octavio_Paz a schema1:Person ;
+    schema1:birthDate "1914-03-31T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "modernisme",
+        "surréalisme" ;
+    schema1:name "Octavio Paz" ;
+    schema1:nationality "Mexique",
+        "Seconde République espagnole" .
+
+ex:Odo_Marquard a schema1:Person ;
+    schema1:birthDate "1928-02-26T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Odo Marquard" ;
+    schema1:nationality "Allemagne" .
+
+ex:Oskar_Ernst_Bernhardt a schema1:Person ;
+    schema1:birthDate "1875-04-18T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Oskar Ernst Bernhardt" ;
+    schema1:nationality "Reich allemand" .
+
+ex:Oskar_Negt a schema1:Person ;
+    schema1:birthDate "1934-08-01T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Oskar Negt" ;
+    schema1:nationality "Allemagne" .
+
+ex:Otto_Bauer a schema1:Person ;
+    schema1:birthDate "1881-09-05T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "marxisme" ;
+    schema1:name "Otto Bauer" ;
+    schema1:nationality "Autriche" .
+
+ex:Otto_Friedrich_Bollnow a schema1:Person ;
+    schema1:birthDate "1903-03-14T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Otto Friedrich Bollnow" ;
+    schema1:nationality "Allemagne" .
+
+ex:Otto_Jespersen a schema1:Person ;
+    schema1:birthDate "1860-07-16T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Otto Jespersen" ;
+    schema1:nationality "Royaume du Danemark" .
+
+ex:Otto_Liebmann a schema1:Person ;
+    schema1:birthDate "1840-02-25T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Otto Liebmann" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Otto_von_Gierke a schema1:Person ;
+    schema1:birthDate "1841-01-11T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Otto von Gierke" ;
+    schema1:nationality "Reich allemand",
+        "Royaume de Prusse" .
+
+ex:Ozjasz_Thon a schema1:Person ;
+    schema1:birthDate "1870-02-13T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Ozjasz Thon" ;
+    schema1:nationality "Autriche-Hongrie",
+        "Pologne" .
+
+ex:Paul_Deussen a schema1:Person ;
+    schema1:birthDate "1845-01-07T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Erich Rothacker" ;
+    schema1:name "Paul Deussen" ;
+    schema1:nationality "Allemagne" .
+
+<http://example.org/philosophes/Paul_Henri_Thiry_d’Holbach> a schema1:Person ;
+    schema1:birthDate "1723-12-08T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "athéisme" ;
+    schema1:name "Paul Henri Thiry d’Holbach" ;
+    schema1:nationality "France",
+        "Palatinat du Rhin" .
+
+ex:Paul_Johann_Anselm_von_Feuerbach a schema1:Person ;
+    schema1:birthDate "1775-11-14T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Paul Johann Anselm von Feuerbach" ;
+    schema1:nationality "grand-duché de Saxe-Weimar-Eisenach" .
+
+ex:Paul_Kirchhoff a schema1:Person ;
+    schema1:birthDate "1900-08-17T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Paul Kirchhoff" ;
+    schema1:nationality "Empire allemand",
+        "Mexique",
+        "République de Weimar" .
+
+ex:Paul_Oppenheim a schema1:Person ;
+    schema1:birthDate "1885-06-17T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Paul Oppenheim" ;
+    schema1:nationality "Allemagne" .
+
+ex:Paul_Oskar_Kristeller a schema1:Person ;
+    schema1:birthDate "1905-05-22T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "James Hankins",
+        "Neal Ward Gilbert",
+        "Ronald G. Witt" ;
+    schema1:name "Paul Oskar Kristeller" ;
+    schema1:nationality "Allemagne",
+        "États-Unis" .
+
+ex:Paul_Rée a schema1:Person ;
+    schema1:birthDate "1849-11-21T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "positivisme" ;
+    schema1:name "Paul Rée" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Paul_Tillich a schema1:Person ;
+    schema1:birthDate "1886-08-20T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Paul Tillich" ;
+    schema1:nationality "Reich allemand",
+        "États-Unis" .
+
+ex:Paul_de_Lagarde a schema1:Person ;
+    schema1:birthDate "1827-11-02T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "William Robertson Smith" ;
+    schema1:name "Paul de Lagarde" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Pehr_Forsskål a schema1:Person ;
+    schema1:birthDate "1732-01-11T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Pehr Forsskål" ;
+    schema1:nationality "Suède" .
+
+ex:Peter_Sloterdijk a schema1:Person ;
+    schema1:birthDate "1947-06-26T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Marc Jongen" ;
+    schema1:name "Peter Sloterdijk" ;
+    schema1:nationality "Allemagne" .
+
+ex:Philipp_Konrad_Marheineke a schema1:Person ;
+    schema1:birthDate "1780-04-23T00:00:00Z",
+        "1780-05-01T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Bruno Bauer" ;
+    schema1:name "Philipp Konrad Marheineke" ;
+    schema1:nationality "royaume de Hanovre" .
+
+ex:Pierre-Joseph_Proudhon a schema1:Person ;
+    schema1:birthDate "1809-01-15T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Armand Hayem" ;
+    schema1:name "Pierre-Joseph Proudhon" ;
+    schema1:nationality "Belgique",
+        "France" .
+
+ex:Pierre-Simon_de_Laplace a schema1:Person ;
+    schema1:alumniOf "Christophe Gadbled" ;
+    schema1:birthDate "1749-03-23T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Pierre-Simon de Laplace" ;
+    schema1:nationality "France" .
+
+ex:Pierre_Klossowski a schema1:Person ;
+    schema1:birthDate "1905-08-09T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Pierre Klossowski" ;
+    schema1:nationality "France" .
+
+ex:Pierre_Kropotkine a schema1:Person ;
+    schema1:birthDate "1842-12-09T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "anarchisme" ;
+    schema1:name "Pierre Kropotkine" ;
+    schema1:nationality "Empire russe",
+        "république socialiste fédérative soviétique de Russie" .
+
+ex:Pirkko-Liisa_Lehtosalo-Hilander a schema1:Person ;
+    schema1:birthDate "1934-06-09T00:00:00Z" ;
+    schema1:gender "féminin" ;
+    schema1:name "Pirkko-Liisa Lehtosalo-Hilander" ;
+    schema1:nationality "Finlande" .
+
+ex:Q57112 a schema1:Person ;
+    schema1:birthDate "1880-05-29T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "Révolution conservatrice" ;
+    schema1:name "Q57112" ;
+    schema1:nationality "Allemagne" .
+
+ex:Quentin_Smith a schema1:Person ;
+    schema1:birthDate "1952-08-27T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Quentin Smith" ;
+    schema1:nationality "États-Unis" .
+
+ex:Rabîndranâth_Tagore a schema1:Person ;
+    schema1:birthDate "1861-05-07T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Lakshmiswar Sinha",
+        "Mukul Dey" ;
+    schema1:name "Rabîndranâth Tagore" ;
+    schema1:nationality "Raj britannique" .
+
+ex:Rainer_Woelki a schema1:Person ;
+    schema1:birthDate "1956-08-18T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Rainer Woelki" ;
+    schema1:nationality "Allemagne" .
+
+ex:Ralph_Barton_Perry a schema1:Person ;
+    schema1:birthDate "1876-07-03T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Ralph Barton Perry" ;
+    schema1:nationality "États-Unis" .
+
+ex:Ralph_Waldo_Emerson a schema1:Person ;
+    schema1:birthDate "1803-05-25T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "philosophie occidentale" ;
+    schema1:name "Ralph Waldo Emerson" ;
+    schema1:nationality "États-Unis" .
+
+ex:Rambhadracharya a schema1:Person ;
+    schema1:birthDate "1950-01-14T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Rambhadracharya" ;
+    schema1:nationality "Inde" .
+
+ex:Richard_Carrier a schema1:Person ;
+    schema1:birthDate "1969-12-01T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "athéisme" ;
+    schema1:name "Richard Carrier" ;
+    schema1:nationality "États-Unis" .
+
+ex:Richard_David_Precht a schema1:Person ;
+    schema1:birthDate "1964-12-08T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Richard David Precht" ;
+    schema1:nationality "Allemagne" .
+
+ex:Robert_Kurz a schema1:Person ;
+    schema1:birthDate "1943-12-24T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "critique de la valeur" ;
+    schema1:name "Robert Kurz" ;
+    schema1:nationality "Allemagne" .
+
+ex:Robert_Michels a schema1:Person ;
+    schema1:birthDate "1876-01-09T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Robert Michels" ;
+    schema1:nationality "Allemagne",
+        "royaume d'Italie" .
+
+ex:Robert_Nozick a schema1:Person ;
+    schema1:birthDate "1938-11-16T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Robert Nozick" ;
+    schema1:nationality "États-Unis" .
+
+ex:Robert_Spaemann a schema1:Person ;
+    schema1:birthDate "1927-05-05T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Robert Spaemann" ;
+    schema1:nationality "Allemagne" .
+
+ex:Robert_von_Mohl a schema1:Person ;
+    schema1:birthDate "1799-08-17T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Albert Hänel" ;
+    schema1:name "Robert von Mohl" ;
+    schema1:nationality "Royaume du Wurtemberg",
+        "duché de Wurtemberg" .
+
+ex:Romano_Guardini a schema1:Person ;
+    schema1:birthDate "1885-02-17T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Romano Guardini" ;
+    schema1:nationality "Allemagne" .
+
+ex:Rosa_Luxemburg a schema1:Person ;
+    schema1:alumniOf "Julius Wolf" ;
+    schema1:birthDate "1871-03-05T00:00:00Z" ;
+    schema1:gender "féminin" ;
+    schema1:name "Rosa Luxemburg" ;
+    schema1:nationality "Allemagne",
+        "Empire russe" .
+
+ex:Rudolf_Bahro a schema1:Person ;
+    schema1:birthDate "1935-11-18T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Rudolf Bahro" ;
+    schema1:nationality "Allemagne",
+        "République démocratique allemande" .
+
+ex:Rudolf_Christoph_Eucken a schema1:Person ;
+    schema1:birthDate "1846-01-05T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Maria Bezobrazova" ;
+    schema1:knowsAbout "idéalisme allemand",
+        "philosophie continentale" ;
+    schema1:name "Rudolf Christoph Eucken" ;
+    schema1:nationality "Empire allemand",
+        "Royaume de Prusse",
+        "République de Weimar" .
+
+ex:Rudolf_Haym a schema1:Person ;
+    schema1:birthDate "1821-10-05T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Rudolf Haym" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Rudolf_Hermann_Lotze a schema1:Person ;
+    schema1:alumniOf "Ernst Heinrich Weber",
+        "Gustav Fechner" ;
+    schema1:birthDate "1817-05-21T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Carl Stumpf",
+        "Josiah Royce" ;
+    schema1:name "Rudolf Hermann Lotze" ;
+    schema1:nationality "royaume de Saxe" .
+
+ex:Ruth_Kinna a schema1:Person ;
+    schema1:birthDate "1961-03-01T00:00:00Z" ;
+    schema1:gender "féminin" ;
+    schema1:name "Ruth Kinna" ;
+    schema1:nationality "Royaume-Uni" .
+
+ex:Rüdiger_Safranski a schema1:Person ;
+    schema1:birthDate "1945-01-01T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Rüdiger Safranski" ;
+    schema1:nationality "Allemagne" .
+
+ex:Salomon_Munk a schema1:Person ;
+    schema1:birthDate "1803-05-14T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Salomon Munk" ;
+    schema1:nationality "France",
+        "Royaume de Prusse" .
+
+ex:Samuel_Huntington a schema1:Person ;
+    schema1:birthDate "1927-04-18T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Francis Fukuyama",
+        "John Mearsheimer" ;
+    schema1:name "Samuel Huntington" ;
+    schema1:nationality "États-Unis" .
+
+ex:Shrimad_Rajchandra a schema1:Person ;
+    schema1:birthDate "1867-11-11T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Mahatma Gandhi" ;
+    schema1:name "Shrimad Rajchandra" ;
+    schema1:nationality "Raj britannique" .
+
+ex:Simone_de_Beauvoir a schema1:Person ;
+    schema1:birthDate "1908-01-09T00:00:00Z" ;
+    schema1:gender "féminin" ;
+    schema1:knowsAbout "athéisme",
+        "existentialisme",
+        "féminisme" ;
+    schema1:name "Simone de Beauvoir" ;
+    schema1:nationality "France" .
+
+ex:Sophie_Germain a schema1:Person ;
+    schema1:birthDate "1776-04-01T00:00:00Z" ;
+    schema1:gender "féminin" ;
+    schema1:name "Sophie Germain" ;
+    schema1:nationality "France" .
+
+ex:Stanisław_Lem a schema1:Person ;
+    schema1:birthDate "1921-09-12T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Stanisław Lem" ;
+    schema1:nationality "Pologne" .
+
+ex:Stefan_Klein a schema1:Person ;
+    schema1:birthDate "1965-10-05T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Stefan Klein" ;
+    schema1:nationality "Allemagne" .
+
+ex:Sully_Prudhomme a schema1:Person ;
+    schema1:birthDate "1839-03-16T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Sully Prudhomme" ;
+    schema1:nationality "France" .
+
+ex:Sun_Yat-sen a schema1:Person ;
+    schema1:birthDate "1866-11-12T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Sun Yat-sen" ;
+    schema1:nationality "Taïwan",
+        "dynastie Qing" .
+
+ex:Susanne_von_Klettenberg a schema1:Person ;
+    schema1:birthDate "1723-12-19T00:00:00Z" ;
+    schema1:gender "féminin" ;
+    schema1:name "Susanne von Klettenberg" ;
+    schema1:nationality "Allemagne" .
+
+ex:Søren_Kierkegaard a schema1:Person ;
+    schema1:alumniOf "Frederik Christian Sibbern",
+        "Hans Lassen Martensen",
+        "Poul Martin Møller" ;
+    schema1:birthDate "1813-05-05T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "existentialisme" ;
+    schema1:name "Søren Kierkegaard" ;
+    schema1:nationality "Royaume du Danemark" .
+
+ex:Ted_Nelson a schema1:Person ;
+    schema1:birthDate "1937-06-17T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Ted Nelson" ;
+    schema1:nationality "États-Unis" .
+
+ex:Theodor_Lessing a schema1:Person ;
+    schema1:birthDate "1872-02-08T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Theodor Lessing" ;
+    schema1:nationality "Allemagne" .
+
+ex:Theodor_Lipps a schema1:Person ;
+    schema1:birthDate "1851-07-28T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Theodor Lipps" ;
+    schema1:nationality "Reich allemand" .
+
+ex:Theodor_Ziehen a schema1:Person ;
+    schema1:birthDate "1862-11-12T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Theodor Ziehen" ;
+    schema1:nationality "Allemagne" .
+
+ex:Thomas_Jefferson a schema1:Person ;
+    schema1:alumniOf "William Small" ;
+    schema1:birthDate "1743-04-13T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Thomas Jefferson" ;
+    schema1:nationality "États-Unis" .
+
+ex:Thomas_Metzinger a schema1:Person ;
+    schema1:birthDate "1958-03-12T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "athéisme" ;
+    schema1:name "Thomas Metzinger" ;
+    schema1:nationality "Allemagne" .
+
+ex:Thomas_Pogge a schema1:Person ;
+    schema1:birthDate "1953-08-13T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Thomas Pogge" ;
+    schema1:nationality "Allemagne" .
+
+ex:Thomas_Young a schema1:Person ;
+    schema1:birthDate "1773-06-13T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Thomas Young" ;
+    schema1:nationality "Royaume-Uni de Grande-Bretagne et d'Irlande" .
+
+ex:Ukshin_Hoti a schema1:Person ;
+    schema1:birthDate "1943-06-17T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Ukshin Hoti" ;
+    schema1:nationality "Serbie",
+        "Yougoslavie" .
+
+ex:Umberto_Eco a schema1:Person ;
+    schema1:birthDate "1932-01-05T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Christos Thivaios",
+        "Marco Belpoliti" ;
+    schema1:name "Umberto Eco" ;
+    schema1:nationality "Italie",
+        "royaume d'Italie" .
+
+ex:Vesna_Pusić a schema1:Person ;
+    schema1:birthDate "1953-03-25T00:00:00Z" ;
+    schema1:gender "féminin" ;
+    schema1:name "Vesna Pusić" ;
+    schema1:nationality "Croatie" .
+
+ex:Viktor_von_Weizsäcker a schema1:Person ;
+    schema1:birthDate "1886-04-21T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Viktor von Weizsäcker" ;
+    schema1:nationality "Allemagne" .
+
+ex:Vilfredo_Pareto a schema1:Person ;
+    schema1:birthDate "1848-07-15T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "École de Lausanne" ;
+    schema1:name "Vilfredo Pareto" ;
+    schema1:nationality "France",
+        "royaume d'Italie" .
+
+ex:Vinoba_Bhave a schema1:Person ;
+    schema1:alumniOf "Mahatma Gandhi" ;
+    schema1:birthDate "1895-09-11T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Satish Kumar" ;
+    schema1:name "Vinoba Bhave" ;
+    schema1:nationality "Inde",
+        "Raj britannique" .
+
+ex:Virchand_Gandhi a schema1:Person ;
+    schema1:birthDate "1864-08-25T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Virchand Gandhi" ;
+    schema1:nationality "Raj britannique" .
+
+ex:Vivekananda a schema1:Person ;
+    schema1:alumniOf "Râmakrishna" ;
+    schema1:birthDate "1863-01-12T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Shuddhananda Bharati",
+        "Swami Paramananda",
+        "Swami Swarupananda",
+        "Swami Virajananda",
+        "Sœur Nivedita",
+        "William Hastie" ;
+    schema1:name "Vivekananda" ;
+    schema1:nationality "Raj britannique" .
+
+ex:Václav_Havel a schema1:Person ;
+    schema1:birthDate "1936-10-05T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Václav Havel" ;
+    schema1:nationality "Tchécoslovaquie",
+        "Tchéquie" .
+
+ex:Walter_Block a schema1:Person ;
+    schema1:birthDate "1941-08-21T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "école autrichienne d'économie" ;
+    schema1:name "Walter Block" ;
+    schema1:nationality "États-Unis" .
+
+ex:Walter_F._Otto a schema1:Person ;
+    schema1:birthDate "1874-06-22T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Hermann Bengtson" ;
+    schema1:name "Walter F. Otto" ;
+    schema1:nationality "Allemagne" .
+
+ex:Walter_Kaufmann a schema1:Person ;
+    schema1:birthDate "1921-07-01T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "philosophie continentale",
+        "philosophie occidentale" ;
+    schema1:name "Walter Kaufmann" ;
+    schema1:nationality "Allemagne",
+        "États-Unis" .
+
+ex:Walther_Kranz a schema1:Person ;
+    schema1:alumniOf "Ulrich von Wilamowitz-Moellendorff" ;
+    schema1:birthDate "1884-11-23T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Walther Kranz" ;
+    schema1:nationality "Allemagne" .
+
+ex:Werner_Hamacher a schema1:Person ;
+    schema1:birthDate "1948-04-27T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Werner Hamacher" ;
+    schema1:nationality "Allemagne" .
+
+ex:Werner_Jaeger a schema1:Person ;
+    schema1:alumniOf "Ulrich von Wilamowitz-Moellendorff" ;
+    schema1:birthDate "1888-07-30T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Wolfgang Schadewaldt" ;
+    schema1:name "Werner Jaeger" ;
+    schema1:nationality "Allemagne",
+        "États-Unis" .
+
+ex:Wilhelm_Dilthey a schema1:Person ;
+    schema1:birthDate "1833-11-19T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knowsAbout "philosophie occidentale" ;
+    schema1:name "Wilhelm Dilthey" ;
+    schema1:nationality "Royaume de Prusse" .
+
+ex:Wilhelm_Ostwald a schema1:Person ;
+    schema1:birthDate "1853-09-02T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Wilhelm Ostwald" ;
+    schema1:nationality "Allemagne",
+        "Empire russe" .
+
+ex:William_Blake a schema1:Person ;
+    schema1:alumniOf "Georg Michael Moser",
+        "Henry Pars",
+        "James Barry",
+        "James Basire" ;
+    schema1:birthDate "1757-11-28T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Thomas Trotter" ;
+    schema1:knowsAbout "peinture féerique",
+        "romantisme" ;
+    schema1:name "William Blake" ;
+    schema1:nationality "Royaume-Uni",
+        "Royaume-Uni de Grande-Bretagne et d'Irlande",
+        "royaume de Grande-Bretagne" .
+
+ex:William_Hirstein a schema1:Person ;
+    schema1:birthDate "1966-01-01T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "William Hirstein" ;
+    schema1:nationality "États-Unis" .
+
+ex:Wole_Soyinka a schema1:Person ;
+    schema1:birthDate "1934-07-13T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Wole Soyinka" ;
+    schema1:nationality "Nigeria" .
+
+ex:Wolfhart_Pannenberg a schema1:Person ;
+    schema1:birthDate "1928-10-02T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Wolfhart Pannenberg" ;
+    schema1:nationality "Allemagne" .
+
+ex:Xu_Liangying a schema1:Person ;
+    schema1:birthDate "1920-05-03T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Xu Liangying" ;
+    schema1:nationality "république populaire de Chine" .
+
+ex:Émile_Boirac a schema1:Person ;
+    schema1:birthDate "1851-08-26T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:name "Émile Boirac" ;
+    schema1:nationality "France" .
+
+ex:Émile_Durkheim a schema1:Person ;
+    schema1:alumniOf "Numa Denis Fustel de Coulanges",
+        "Wilhelm Wundt" ;
+    schema1:birthDate "1858-04-15T00:00:00Z" ;
+    schema1:gender "masculin" ;
+    schema1:knows "Marcel Mauss",
+        "Maurice Halbwachs",
+        "Robert Hertz" ;
+    schema1:name "Émile Durkheim" ;
+    schema1:nationality "France" .
+
+ex:Émilie_du_Châtelet a schema1:Person ;
+    schema1:alumniOf "Alexis Claude Clairaut",
+        "Pierre-Louis Moreau de Maupertuis" ;
+    schema1:birthDate "1706-12-18T00:00:00Z" ;
+    schema1:gender "féminin" ;
+    schema1:knowsAbout "Lumières" ;
+    schema1:name "Émilie du Châtelet" ;
+    schema1:nationality "France" .
+

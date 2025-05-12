@@ -1,20 +1,15 @@
 
-# 📚 Documentation – Wikidata : population des philosophes (projet Humanités)
+# 📚 Documentation – Wikidata : population des philosophes 
 
 ## 🧠 Objectif
 Ce document décrit les requêtes SPARQL utilisées pour extraire une base de données de philosophes nés après 1700 à partir de Wikidata, en lien avec 5 problématiques prosopographiques.
 
----
-
-## 📌 Problématiques et requêtes associées
-
----
 
 ### 🧑‍🤝‍🧑 1. Profils socio-démographiques dominants
 
 **Objectif :** explorer la distribution selon le sexe, la nationalité, le siècle de naissance, et la formation académique.
 
-#### 🔎 Requête – Sexe, nationalité, naissance
+####  Sexe, nationalité, naissance
 
 ```sparql
 SELECT ?philosopher ?philosopherLabel ?birthDate ?sexLabel ?nationalityLabel
@@ -32,7 +27,7 @@ WHERE {
 LIMIT 1000
 ```
 
-#### 🔎 Requête – Études (formation académique)
+####  Requête – Études (formation académique)
 
 ```sparql
 SELECT DISTINCT ?philosopher ?philosopherLabel ?birthDate ?universityLabel
@@ -53,9 +48,7 @@ WHERE {
 
 ---
 
-### 🧬 2. Filiations maître–élève
-
-**Objectif :** détecter les relations intellectuelles entre philosophes à travers les liens hiérarchiques.
+### 2. Filiations maître–élève
 
 ```sparql
 SELECT ?philosopher ?philosopherLabel ?student ?studentLabel
@@ -72,9 +65,8 @@ WHERE {
 
 ---
 
-### 🏛️ 3. Appartenances institutionnelles
+###  3. Appartenances institutionnelles
 
-**Objectif :** analyser les affiliations à des institutions (universités, académies, etc.) et leur lien avec les individus.
 
 ```sparql
 SELECT DISTINCT ?philosopher ?philosopherLabel ?organizationLabel ?startYear ?endYear
@@ -96,9 +88,8 @@ WHERE {
 
 ---
 
-### 🧭 4. Évolution des courants philosophiques
+### 4. Évolution des courants philosophiques
 
-**Objectif :** observer les tendances dominantes dans le temps.
 
 ```sparql
 SELECT ?philosopher ?philosopherLabel ?movementLabel ?birthDate
@@ -116,9 +107,7 @@ WHERE {
 
 ---
 
-### 🌍 5. Influence des origines géographiques sur les courants
-
-**Objectif :** croiser pays d’origine avec école de pensée.
+### 5. Influence des origines géographiques sur les courants
 
 ```sparql
 SELECT ?philosopher ?philosopherLabel ?nationalityLabel ?movementLabel
@@ -131,11 +120,7 @@ WHERE {
 }
 ```
 
-📌 *À faire dans notebook 2 : tableau croisé nationalité × courant, test du Chi².*
-
----
-
-## 🔗 Outils et ressources
+## Outils et ressources
 
 - [Wikidata SPARQL Endpoint](https://query.wikidata.org)
 - [Query Builder](https://query.wikidata.org/querybuilder/?uselang=fr)

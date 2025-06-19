@@ -1,11 +1,11 @@
 
-# 📚 Documentation – Wikidata : population des philosophes 
+#  Documentation – Wikidata : population des philosophes 
 
-## 🧠 Objectif
-Ce document décrit les requêtes SPARQL utilisées pour extraire une base de données de philosophes nés après 1700 à partir de Wikidata, en lien avec 5 problématiques prosopographiques.
+##  Objectif
+Ce document possède les requêtes SPARQL utilisées pour extraire une base de données de philosophes nés après 1700 à partir de Wikidata, en lien avec 5 problématiques prosopographiques.
 
 
-### 🧑‍🤝‍🧑 1. Profils socio-démographiques dominants
+###  1. Profils socio-démographiques dominants
 
 **Objectif :** explorer la distribution selon le sexe, la nationalité, le siècle de naissance, et la formation académique.
 
@@ -43,8 +43,7 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "fr,en". }
 }
 ```
-
-📌 *À faire dans le notebook 1 : Histogramme sexe / nationalité / siècle.*
+ *À faire dans le notebook 1 : Histogramme sexe / nationalité / siècle.*
 
 ---
 
@@ -60,8 +59,7 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "fr,en". }
 }
 ```
-
-📌 *À visualiser dans notebook 3 (analyse de réseaux). Graphe avec maîtres et élèves.*
+ *À visualiser dans notebook 3 (analyse de réseaux). Graphe avec maîtres et élèves.*
 
 ---
 
@@ -83,8 +81,7 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "fr,en". }
 }
 ```
-
-📌 *À visualiser dans notebook 3 (analyse de réseaux bipartis : philosophes – institutions).*
+ *À visualiser dans notebook 3 (analyse de réseaux bipartis : philosophes – institutions).*
 
 ---
 
@@ -103,7 +100,7 @@ WHERE {
 }
 ```
 
-📌 *À faire dans notebook 1 ou 2 : courbe temporelle ou heatmap par siècle / courant.*
+ *À faire dans notebook 1 ou 2 : courbe temporelle ou heatmap par siècle / courant.*
 
 ---
 
@@ -120,11 +117,5 @@ WHERE {
 }
 ```
 
-## Outils et ressources
-
-- [Wikidata SPARQL Endpoint](https://query.wikidata.org)
-- [Query Builder](https://query.wikidata.org/querybuilder/?uselang=fr)
-- [SPARQL 1.1](https://www.w3.org/TR/sparql11-query)
-- [Zazuko Tutorial (FR)](https://www.zazuko.com/sparql)
 
 ---

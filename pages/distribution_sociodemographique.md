@@ -8,17 +8,18 @@ Les données ont été extraites via des requêtes SPARQL ciblant les philosophe
 
 ## Résultats
 
-### Répartition par sexe
+### Répartition par sexe dans le temps
 ![image](https://github.com/user-attachments/assets/3da2a01d-025f-449f-acd7-5595b4644c0a)
 
 On observe une surreprésentation masculine marquée, traduisant des inégalités historiques dans l'accès aux carrières philosophiques.
 
 ### Répartition par nationalité
-![Nationalité](../notebooks/images/plot_nationalite.png)
+![image](https://github.com/user-attachments/assets/9ea10fc5-714e-485c-8b61-f812b492c0f3)
 
 Les pays européens, notamment la France, l'Allemagne et le Royaume-Uni, concentrent une large part des philosophes référencés.
 
-### Répartition par siècle de naissance
-![Siècle](../notebooks/images/plot_siecle.png)
+### Répartition des écoles de pensées
+![image](https://github.com/user-attachments/assets/8e5013b3-8254-4be1-8def-74522c639b01)
 
-La production philosophique connaît un essor majeur au XVIIIe et XIXe siècle, avec un pic de naissances au XXe.
+
+On remarque rapidement une majorité écrasante par la pensée de révolution conservatrice.

@@ -1,0 +1,19 @@
+# Réseaux de relations maître–élève
+
+## Objectif
+Visualiser les filiations intellectuelles à travers les relations maître–élève entre philosophes.
+
+## Méthodologie
+Les données sont extraites via la propriété `P184` (maître doctoral) de Wikidata. Un graphe orienté a été généré avec NetworkX et visualisé à l'aide de Pyvis.
+
+## Résultats
+
+### Graphe des relations maître–élève
+![Graphe](../notebooks/images/graph_maitre_eleve.png)
+
+- Le graphe montre des chaînes de transmission intellectuelle au sein de certaines écoles.
+- Des clusters importants sont visibles autour de figures centrales (ex : Kant, Hegel).
+- Certaines zones du graphe révèlent une forte densité relationnelle, signe d'une tradition philosophique vivante et organisée.
+
+## Conclusion
+L’analyse des relations maître–élève permet de reconstituer des lignées intellectuelles et de cartographier les influences mutuelles entre penseurs.

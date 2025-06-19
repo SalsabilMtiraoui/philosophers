@@ -1,0 +1,250 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 600px;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "Friedrich Paulsen", "label": "Friedrich Paulsen", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Edmund Husserl", "label": "Edmund Husserl", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Martin Heidegger", "label": "Martin Heidegger", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Eugen Fink", "label": "Eugen Fink", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Karl Weierstrass", "label": "Karl Weierstrass", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Franz Brentano", "label": "Franz Brentano", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Carl Stumpf", "label": "Carl Stumpf", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Wilhelm Wundt", "label": "Wilhelm Wundt", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "\u00c9mile Durkheim", "label": "\u00c9mile Durkheim", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Ferdinand T\u00f6nnies", "label": "Ferdinand T\u00f6nnies", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Leopold Kronecker", "label": "Leopold Kronecker", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "William Small", "label": "William Small", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Thomas Jefferson", "label": "Thomas Jefferson", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "James Barry", "label": "James Barry", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "William Blake", "label": "William Blake", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Georg Michael Moser", "label": "Georg Michael Moser", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "James Basire", "label": "James Basire", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Henry Pars", "label": "Henry Pars", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Emmanuel Kant", "label": "Emmanuel Kant", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Jacob Sigismund Beck", "label": "Jacob Sigismund Beck", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Christian Jakob Kraus", "label": "Christian Jakob Kraus", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Johann Schultz", "label": "Johann Schultz", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Ra\u00fal Porras Barrenechea", "label": "Ra\u00fal Porras Barrenechea", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Mario Vargas Llosa", "label": "Mario Vargas Llosa", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Isaac Humala N\u00fa\u00f1ez", "label": "Isaac Humala N\u00fa\u00f1ez", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Luis Jaime Cisneros", "label": "Luis Jaime Cisneros", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Hermann Ludwig von Helmholtz", "label": "Hermann Ludwig von Helmholtz", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Heinrich Rudolf Hertz", "label": "Heinrich Rudolf Hertz", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Philipp Furtw\u00e4ngler", "label": "Philipp Furtw\u00e4ngler", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Kurt G\u00f6del", "label": "Kurt G\u00f6del", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Johann Gottfried Teske", "label": "Johann Gottfried Teske", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Alfred Marshall", "label": "Alfred Marshall", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "John Maynard Keynes", "label": "John Maynard Keynes", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "William Ernest Johnson", "label": "William Ernest Johnson", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Jacob Burckhardt", "label": "Jacob Burckhardt", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Friedrich Nietzsche", "label": "Friedrich Nietzsche", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Friedrich Wilhelm Ritschl", "label": "Friedrich Wilhelm Ritschl", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Shrimad Rajchandra", "label": "Shrimad Rajchandra", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Mahatma Gandhi", "label": "Mahatma Gandhi", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Vinoba Bhave", "label": "Vinoba Bhave", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "John Edmonstone", "label": "John Edmonstone", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Charles Darwin", "label": "Charles Darwin", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Adam Sedgwick", "label": "Adam Sedgwick", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Hildur Akselsson", "label": "Hildur Akselsson", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Dag Hammarskj\u00f6ld", "label": "Dag Hammarskj\u00f6ld", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Jean-Baptiste Penon", "label": "Jean-Baptiste Penon", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Charles Maurras", "label": "Charles Maurras", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Erwin Stresemann", "label": "Erwin Stresemann", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Ernst Mayr", "label": "Ernst Mayr", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Li Yuanfu", "label": "Li Yuanfu", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Mao Zedong", "label": "Mao Zedong", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Adam Friedrich Oeser", "label": "Adam Friedrich Oeser", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Johann Wolfgang von Goethe", "label": "Johann Wolfgang von Goethe", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Justus Christian Loder", "label": "Justus Christian Loder", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Jean Schweighaeuser", "label": "Jean Schweighaeuser", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Poul Martin M\u00f8ller", "label": "Poul Martin M\u00f8ller", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "S\u00f8ren Kierkegaard", "label": "S\u00f8ren Kierkegaard", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Hans Lassen Martensen", "label": "Hans Lassen Martensen", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Frederik Christian Sibbern", "label": "Frederik Christian Sibbern", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Julius Wolf", "label": "Julius Wolf", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Rosa Luxemburg", "label": "Rosa Luxemburg", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Alexis Claude Clairaut", "label": "Alexis Claude Clairaut", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "\u00c9milie du Ch\u00e2telet", "label": "\u00c9milie du Ch\u00e2telet", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Pierre-Louis Moreau de Maupertuis", "label": "Pierre-Louis Moreau de Maupertuis", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Philipp Ludwig von Seidel", "label": "Philipp Ludwig von Seidel", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Max Planck", "label": "Max Planck", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Moritz Schlick", "label": "Moritz Schlick", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Gustav Bauer", "label": "Gustav Bauer", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Roman Jakobson", "label": "Roman Jakobson", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Noam Chomsky", "label": "Noam Chomsky", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Zellig Harris", "label": "Zellig Harris", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Augustin Louis Cauchy", "label": "Augustin Louis Cauchy", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Auguste Comte", "label": "Auguste Comte", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Claude-Henri de Rouvroy de Saint-Simon", "label": "Claude-Henri de Rouvroy de Saint-Simon", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Fran\u00e7ois Arago", "label": "Fran\u00e7ois Arago", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Louis Jacques Th\u00e9nard", "label": "Louis Jacques Th\u00e9nard", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Louis Poinsot", "label": "Louis Poinsot", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Alexis Th\u00e9r\u00e8se Petit", "label": "Alexis Th\u00e9r\u00e8se Petit", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Jean Nicolas Pierre Hachette", "label": "Jean Nicolas Pierre Hachette", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Daniel Encontre", "label": "Daniel Encontre", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Karl Popper", "label": "Karl Popper", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "George Soros", "label": "George Soros", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Harold Laski", "label": "Harold Laski", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Numa Denis Fustel de Coulanges", "label": "Numa Denis Fustel de Coulanges", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Alphonse Darlu", "label": "Alphonse Darlu", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Louis Couturat", "label": "Louis Couturat", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Theodor Storm", "label": "Theodor Storm", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Adolph Wagner", "label": "Adolph Wagner", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Ernst Engel", "label": "Ernst Engel", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Richard B\u00f6ckh", "label": "Richard B\u00f6ckh", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Theodor Hermann Meynert", "label": "Theodor Hermann Meynert", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Auguste Forel", "label": "Auguste Forel", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Balthasar Haug", "label": "Balthasar Haug", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Friedrich Schiller", "label": "Friedrich Schiller", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Nelson Goodman", "label": "Nelson Goodman", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Friedrich Gottlieb Welcker", "label": "Friedrich Gottlieb Welcker", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Karl Marx", "label": "Karl Marx", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Jacob Bernays", "label": "Jacob Bernays", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Martin Knutzen", "label": "Martin Knutzen", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Sigmund Freud", "label": "Sigmund Freud", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Lou Andreas-Salom\u00e9", "label": "Lou Andreas-Salom\u00e9", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "George Frederick Stout", "label": "George Frederick Stout", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Bertrand Russell", "label": "Bertrand Russell", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Lazarus Fuchs", "label": "Lazarus Fuchs", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Ernst Zermelo", "label": "Ernst Zermelo", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Rudolf Hermann Lotze", "label": "Rudolf Hermann Lotze", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Gustav Fechner", "label": "Gustav Fechner", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Ernst Heinrich Weber", "label": "Ernst Heinrich Weber", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Siegmund Jakob Baumgarten", "label": "Siegmund Jakob Baumgarten", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Johann Salomo Semler", "label": "Johann Salomo Semler", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Johann David Michaelis", "label": "Johann David Michaelis", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Ernst Nolte", "label": "Ernst Nolte", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Hannah Arendt", "label": "Hannah Arendt", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Karl Mollweide", "label": "Karl Mollweide", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Moritz Wilhelm Drobisch", "label": "Moritz Wilhelm Drobisch", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Wilhelm Traugott Krug", "label": "Wilhelm Traugott Krug", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Ulrich von Wilamowitz-Moellendorff", "label": "Ulrich von Wilamowitz-Moellendorff", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Walther Kranz", "label": "Walther Kranz", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Werner Jaeger", "label": "Werner Jaeger", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Christian Benedict Michaelis", "label": "Christian Benedict Michaelis", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Emmy Noether", "label": "Emmy Noether", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Grete Hermann", "label": "Grete Hermann", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Edmund Landau", "label": "Edmund Landau", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "\u00c9mile Boutroux", "label": "\u00c9mile Boutroux", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Henri Bergson", "label": "Henri Bergson", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Jacques Maritain", "label": "Jacques Maritain", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "F\u00e9lix Ravaisson", "label": "F\u00e9lix Ravaisson", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Louis Althusser", "label": "Louis Althusser", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Michel Foucault", "label": "Michel Foucault", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Maurice Merleau-Ponty", "label": "Maurice Merleau-Ponty", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Georges Canguilhem", "label": "Georges Canguilhem", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Jean Hyppolite", "label": "Jean Hyppolite", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Daniel Lagache", "label": "Daniel Lagache", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Christophe Gadbled", "label": "Christophe Gadbled", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Pierre-Simon de Laplace", "label": "Pierre-Simon de Laplace", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Shaku Soyen", "label": "Shaku Soyen", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Daisetz Teitaro Suzuki", "label": "Daisetz Teitaro Suzuki", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Takeda Mokurai", "label": "Takeda Mokurai", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "H\u014dj\u014d Tokiyuki", "label": "H\u014dj\u014d Tokiyuki", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Kitar\u014d Nishida", "label": "Kitar\u014d Nishida", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "R\u00e2makrishna", "label": "R\u00e2makrishna", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Vivekananda", "label": "Vivekananda", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Pierre Am\u00e9d\u00e9e Marcel-B\u00e9ronneau", "label": "Pierre Am\u00e9d\u00e9e Marcel-B\u00e9ronneau", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Khalil Gibran", "label": "Khalil Gibran", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Franz von Leydig", "label": "Franz von Leydig", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Ernst Haeckel", "label": "Ernst Haeckel", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Rudolf Virchow", "label": "Rudolf Virchow", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Albert von K\u00f6lliker", "label": "Albert von K\u00f6lliker", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Heinrich Rickert", "label": "Heinrich Rickert", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Karl Braig", "label": "Karl Braig", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Alfred Weber", "label": "Alfred Weber", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Erich Fromm", "label": "Erich Fromm", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Friedrich Adolf Trendelenburg", "label": "Friedrich Adolf Trendelenburg", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Franz Jakob Clemens", "label": "Franz Jakob Clemens", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Jeremy Bentham", "label": "Jeremy Bentham", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "John Stuart Mill", "label": "John Stuart Mill", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Piotr Souchkine", "label": "Piotr Souchkine", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Ivan Efremov", "label": "Ivan Efremov", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Christian Wolff", "label": "Christian Wolff", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Mikha\u00efl Lomonossov", "label": "Mikha\u00efl Lomonossov", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Johann Friedrich Henckel", "label": "Johann Friedrich Henckel", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Franz Theodor Kugler", "label": "Franz Theodor Kugler", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Leopold van Ranke", "label": "Leopold van Ranke", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Johannes Peter M\u00fcller", "label": "Johannes Peter M\u00fcller", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Karl Jaspers", "label": "Karl Jaspers", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Gottlob Christian Storr", "label": "Gottlob Christian Storr", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Friedrich Wilhelm Joseph von Schelling", "label": "Friedrich Wilhelm Joseph von Schelling", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Johann Friedrich Flatt", "label": "Johann Friedrich Flatt", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Johann Gottlieb Fichte", "label": "Johann Gottlieb Fichte", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Christian Friedrich von Schnurrer", "label": "Christian Friedrich von Schnurrer", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Johann Friedrich LeBret", "label": "Johann Friedrich LeBret", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Ludwig Joseph Uhland", "label": "Ludwig Joseph Uhland", "shape": "dot", "size": 10}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "Friedrich Paulsen", "to": "Edmund Husserl", "width": 1}, {"arrows": "to", "from": "Edmund Husserl", "to": "Martin Heidegger", "width": 1}, {"arrows": "to", "from": "Edmund Husserl", "to": "Eugen Fink", "width": 1}, {"arrows": "to", "from": "Karl Weierstrass", "to": "Edmund Husserl", "width": 1}, {"arrows": "to", "from": "Franz Brentano", "to": "Edmund Husserl", "width": 1}, {"arrows": "to", "from": "Franz Brentano", "to": "Carl Stumpf", "width": 1}, {"arrows": "to", "from": "Carl Stumpf", "to": "Edmund Husserl", "width": 1}, {"arrows": "to", "from": "Wilhelm Wundt", "to": "Edmund Husserl", "width": 1}, {"arrows": "to", "from": "Wilhelm Wundt", "to": "\u00c9mile Durkheim", "width": 1}, {"arrows": "to", "from": "Wilhelm Wundt", "to": "Ferdinand T\u00f6nnies", "width": 1}, {"arrows": "to", "from": "Leopold Kronecker", "to": "Edmund Husserl", "width": 1}, {"arrows": "to", "from": "William Small", "to": "Thomas Jefferson", "width": 1}, {"arrows": "to", "from": "James Barry", "to": "William Blake", "width": 1}, {"arrows": "to", "from": "Georg Michael Moser", "to": "William Blake", "width": 1}, {"arrows": "to", "from": "James Basire", "to": "William Blake", "width": 1}, {"arrows": "to", "from": "Henry Pars", "to": "William Blake", "width": 1}, {"arrows": "to", "from": "Emmanuel Kant", "to": "Jacob Sigismund Beck", "width": 1}, {"arrows": "to", "from": "Christian Jakob Kraus", "to": "Jacob Sigismund Beck", "width": 1}, {"arrows": "to", "from": "Johann Schultz", "to": "Jacob Sigismund Beck", "width": 1}, {"arrows": "to", "from": "Ra\u00fal Porras Barrenechea", "to": "Mario Vargas Llosa", "width": 1}, {"arrows": "to", "from": "Isaac Humala N\u00fa\u00f1ez", "to": "Mario Vargas Llosa", "width": 1}, {"arrows": "to", "from": "Luis Jaime Cisneros", "to": "Mario Vargas Llosa", "width": 1}, {"arrows": "to", "from": "Hermann Ludwig von Helmholtz", "to": "Heinrich Rudolf Hertz", "width": 1}, {"arrows": "to", "from": "Philipp Furtw\u00e4ngler", "to": "Kurt G\u00f6del", "width": 1}, {"arrows": "to", "from": "Johann Gottfried Teske", "to": "Emmanuel Kant", "width": 1}, {"arrows": "to", "from": "Alfred Marshall", "to": "John Maynard Keynes", "width": 1}, {"arrows": "to", "from": "William Ernest Johnson", "to": "John Maynard Keynes", "width": 1}, {"arrows": "to", "from": "Jacob Burckhardt", "to": "Friedrich Nietzsche", "width": 1}, {"arrows": "to", "from": "Friedrich Wilhelm Ritschl", "to": "Friedrich Nietzsche", "width": 1}, {"arrows": "to", "from": "Shrimad Rajchandra", "to": "Mahatma Gandhi", "width": 1}, {"arrows": "to", "from": "Mahatma Gandhi", "to": "Vinoba Bhave", "width": 1}, {"arrows": "to", "from": "John Edmonstone", "to": "Charles Darwin", "width": 1}, {"arrows": "to", "from": "Adam Sedgwick", "to": "Charles Darwin", "width": 1}, {"arrows": "to", "from": "Hildur Akselsson", "to": "Dag Hammarskj\u00f6ld", "width": 1}, {"arrows": "to", "from": "Jean-Baptiste Penon", "to": "Charles Maurras", "width": 1}, {"arrows": "to", "from": "Erwin Stresemann", "to": "Ernst Mayr", "width": 1}, {"arrows": "to", "from": "Li Yuanfu", "to": "Mao Zedong", "width": 1}, {"arrows": "to", "from": "Adam Friedrich Oeser", "to": "Johann Wolfgang von Goethe", "width": 1}, {"arrows": "to", "from": "Justus Christian Loder", "to": "Johann Wolfgang von Goethe", "width": 1}, {"arrows": "to", "from": "Jean Schweighaeuser", "to": "Johann Wolfgang von Goethe", "width": 1}, {"arrows": "to", "from": "Poul Martin M\u00f8ller", "to": "S\u00f8ren Kierkegaard", "width": 1}, {"arrows": "to", "from": "Hans Lassen Martensen", "to": "S\u00f8ren Kierkegaard", "width": 1}, {"arrows": "to", "from": "Frederik Christian Sibbern", "to": "S\u00f8ren Kierkegaard", "width": 1}, {"arrows": "to", "from": "Julius Wolf", "to": "Rosa Luxemburg", "width": 1}, {"arrows": "to", "from": "Alexis Claude Clairaut", "to": "\u00c9milie du Ch\u00e2telet", "width": 1}, {"arrows": "to", "from": "Pierre-Louis Moreau de Maupertuis", "to": "\u00c9milie du Ch\u00e2telet", "width": 1}, {"arrows": "to", "from": "Philipp Ludwig von Seidel", "to": "Max Planck", "width": 1}, {"arrows": "to", "from": "Max Planck", "to": "Moritz Schlick", "width": 1}, {"arrows": "to", "from": "Gustav Bauer", "to": "Max Planck", "width": 1}, {"arrows": "to", "from": "Roman Jakobson", "to": "Noam Chomsky", "width": 1}, {"arrows": "to", "from": "Zellig Harris", "to": "Noam Chomsky", "width": 1}, {"arrows": "to", "from": "Augustin Louis Cauchy", "to": "Auguste Comte", "width": 1}, {"arrows": "to", "from": "Claude-Henri de Rouvroy de Saint-Simon", "to": "Auguste Comte", "width": 1}, {"arrows": "to", "from": "Fran\u00e7ois Arago", "to": "Auguste Comte", "width": 1}, {"arrows": "to", "from": "Louis Jacques Th\u00e9nard", "to": "Auguste Comte", "width": 1}, {"arrows": "to", "from": "Louis Poinsot", "to": "Auguste Comte", "width": 1}, {"arrows": "to", "from": "Alexis Th\u00e9r\u00e8se Petit", "to": "Auguste Comte", "width": 1}, {"arrows": "to", "from": "Jean Nicolas Pierre Hachette", "to": "Auguste Comte", "width": 1}, {"arrows": "to", "from": "Daniel Encontre", "to": "Auguste Comte", "width": 1}, {"arrows": "to", "from": "Karl Popper", "to": "George Soros", "width": 1}, {"arrows": "to", "from": "Harold Laski", "to": "George Soros", "width": 1}, {"arrows": "to", "from": "Numa Denis Fustel de Coulanges", "to": "\u00c9mile Durkheim", "width": 1}, {"arrows": "to", "from": "Alphonse Darlu", "to": "Louis Couturat", "width": 1}, {"arrows": "to", "from": "Theodor Storm", "to": "Ferdinand T\u00f6nnies", "width": 1}, {"arrows": "to", "from": "Adolph Wagner", "to": "Ferdinand T\u00f6nnies", "width": 1}, {"arrows": "to", "from": "Ernst Engel", "to": "Ferdinand T\u00f6nnies", "width": 1}, {"arrows": "to", "from": "Richard B\u00f6ckh", "to": "Ferdinand T\u00f6nnies", "width": 1}, {"arrows": "to", "from": "Theodor Hermann Meynert", "to": "Auguste Forel", "width": 1}, {"arrows": "to", "from": "Balthasar Haug", "to": "Friedrich Schiller", "width": 1}, {"arrows": "to", "from": "Nelson Goodman", "to": "Noam Chomsky", "width": 1}, {"arrows": "to", "from": "Friedrich Gottlieb Welcker", "to": "Karl Marx", "width": 1}, {"arrows": "to", "from": "Friedrich Gottlieb Welcker", "to": "Jacob Bernays", "width": 1}, {"arrows": "to", "from": "Martin Knutzen", "to": "Emmanuel Kant", "width": 1}, {"arrows": "to", "from": "Sigmund Freud", "to": "Lou Andreas-Salom\u00e9", "width": 1}, {"arrows": "to", "from": "George Frederick Stout", "to": "Bertrand Russell", "width": 1}, {"arrows": "to", "from": "Lazarus Fuchs", "to": "Ernst Zermelo", "width": 1}, {"arrows": "to", "from": "Rudolf Hermann Lotze", "to": "Carl Stumpf", "width": 1}, {"arrows": "to", "from": "Gustav Fechner", "to": "Rudolf Hermann Lotze", "width": 1}, {"arrows": "to", "from": "Ernst Heinrich Weber", "to": "Rudolf Hermann Lotze", "width": 1}, {"arrows": "to", "from": "Siegmund Jakob Baumgarten", "to": "Johann Salomo Semler", "width": 1}, {"arrows": "to", "from": "Siegmund Jakob Baumgarten", "to": "Johann David Michaelis", "width": 1}, {"arrows": "to", "from": "Martin Heidegger", "to": "Ernst Nolte", "width": 1}, {"arrows": "to", "from": "Martin Heidegger", "to": "Hannah Arendt", "width": 1}, {"arrows": "to", "from": "Karl Mollweide", "to": "Moritz Wilhelm Drobisch", "width": 1}, {"arrows": "to", "from": "Wilhelm Traugott Krug", "to": "Moritz Wilhelm Drobisch", "width": 1}, {"arrows": "to", "from": "Ulrich von Wilamowitz-Moellendorff", "to": "Walther Kranz", "width": 1}, {"arrows": "to", "from": "Ulrich von Wilamowitz-Moellendorff", "to": "Werner Jaeger", "width": 1}, {"arrows": "to", "from": "Christian Benedict Michaelis", "to": "Johann David Michaelis", "width": 1}, {"arrows": "to", "from": "Emmy Noether", "to": "Grete Hermann", "width": 1}, {"arrows": "to", "from": "Edmund Landau", "to": "Grete Hermann", "width": 1}, {"arrows": "to", "from": "\u00c9mile Boutroux", "to": "Henri Bergson", "width": 1}, {"arrows": "to", "from": "Henri Bergson", "to": "Jacques Maritain", "width": 1}, {"arrows": "to", "from": "F\u00e9lix Ravaisson", "to": "Henri Bergson", "width": 1}, {"arrows": "to", "from": "Louis Althusser", "to": "Michel Foucault", "width": 1}, {"arrows": "to", "from": "Maurice Merleau-Ponty", "to": "Michel Foucault", "width": 1}, {"arrows": "to", "from": "Georges Canguilhem", "to": "Michel Foucault", "width": 1}, {"arrows": "to", "from": "Jean Hyppolite", "to": "Michel Foucault", "width": 1}, {"arrows": "to", "from": "Daniel Lagache", "to": "Michel Foucault", "width": 1}, {"arrows": "to", "from": "Christophe Gadbled", "to": "Pierre-Simon de Laplace", "width": 1}, {"arrows": "to", "from": "Shaku Soyen", "to": "Daisetz Teitaro Suzuki", "width": 1}, {"arrows": "to", "from": "Takeda Mokurai", "to": "Daisetz Teitaro Suzuki", "width": 1}, {"arrows": "to", "from": "H\u014dj\u014d Tokiyuki", "to": "Kitar\u014d Nishida", "width": 1}, {"arrows": "to", "from": "R\u00e2makrishna", "to": "Vivekananda", "width": 1}, {"arrows": "to", "from": "Pierre Am\u00e9d\u00e9e Marcel-B\u00e9ronneau", "to": "Khalil Gibran", "width": 1}, {"arrows": "to", "from": "Franz von Leydig", "to": "Ernst Haeckel", "width": 1}, {"arrows": "to", "from": "Rudolf Virchow", "to": "Ernst Haeckel", "width": 1}, {"arrows": "to", "from": "Albert von K\u00f6lliker", "to": "Ernst Haeckel", "width": 1}, {"arrows": "to", "from": "Heinrich Rickert", "to": "Martin Heidegger", "width": 1}, {"arrows": "to", "from": "Karl Braig", "to": "Martin Heidegger", "width": 1}, {"arrows": "to", "from": "Alfred Weber", "to": "Erich Fromm", "width": 1}, {"arrows": "to", "from": "Friedrich Adolf Trendelenburg", "to": "Franz Brentano", "width": 1}, {"arrows": "to", "from": "Franz Jakob Clemens", "to": "Franz Brentano", "width": 1}, {"arrows": "to", "from": "Jeremy Bentham", "to": "John Stuart Mill", "width": 1}, {"arrows": "to", "from": "Piotr Souchkine", "to": "Ivan Efremov", "width": 1}, {"arrows": "to", "from": "Christian Wolff", "to": "Mikha\u00efl Lomonossov", "width": 1}, {"arrows": "to", "from": "Johann Friedrich Henckel", "to": "Mikha\u00efl Lomonossov", "width": 1}, {"arrows": "to", "from": "Franz Theodor Kugler", "to": "Jacob Burckhardt", "width": 1}, {"arrows": "to", "from": "Leopold van Ranke", "to": "Jacob Burckhardt", "width": 1}, {"arrows": "to", "from": "Johannes Peter M\u00fcller", "to": "Hermann Ludwig von Helmholtz", "width": 1}, {"arrows": "to", "from": "Karl Jaspers", "to": "Hannah Arendt", "width": 1}, {"arrows": "to", "from": "Gottlob Christian Storr", "to": "Friedrich Wilhelm Joseph von Schelling", "width": 1}, {"arrows": "to", "from": "Johann Friedrich Flatt", "to": "Friedrich Wilhelm Joseph von Schelling", "width": 1}, {"arrows": "to", "from": "Johann Gottlieb Fichte", "to": "Friedrich Wilhelm Joseph von Schelling", "width": 1}, {"arrows": "to", "from": "Christian Friedrich von Schnurrer", "to": "Friedrich Wilhelm Joseph von Schelling", "width": 1}, {"arrows": "to", "from": "Johann Friedrich LeBret", "to": "Friedrich Wilhelm Joseph von Schelling", "width": 1}, {"arrows": "to", "from": "Ludwig Joseph Uhland", "to": "Friedrich Wilhelm Joseph von Schelling", "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

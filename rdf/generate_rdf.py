@@ -49,4 +49,4 @@ for _, row in df.iterrows():
 # Sauvegarder le graphe au format Turtle
 g.serialize(destination="philosophes.ttl", format="turtle")
 
-print("✅ RDF exporté dans 'philosophes.ttl'")
+print("RDF exporté dans 'philosophes.ttl'")

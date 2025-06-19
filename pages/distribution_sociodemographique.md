@@ -9,7 +9,8 @@ Les données ont été extraites via des requêtes SPARQL ciblant les philosophe
 ## Résultats
 
 ### Répartition par sexe
-![Sexe](../notebooks/images/plot_sexe.png)
+![Sexe](![image](https://github.com/user-attachments/assets/3558a113-a047-4cc5-badd-aa0a47a70cb3)
+)
 
 On observe une surreprésentation masculine marquée, traduisant des inégalités historiques dans l'accès aux carrières philosophiques.
 
